@@ -19,6 +19,42 @@
     <link href="css/agency.min.css" rel="stylesheet">
     <!-- <link href="css/agency.css" rel="stylesheet"> -->
 	  <style>
+      #topBtn {
+  display: inline-block;
+  background-color: #FF9800;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+#topBtn::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+#topBtn:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+#topBtn:active {
+  background-color: #555;
+}
+#topBtn.show {
+  opacity: 1;
+  visibility: visible;
+}
       .test img {
         transform: rotate(270deg);
         ...
@@ -86,6 +122,8 @@
   </head>
   <body id="page-top">
     <!-- Navigation -->
+    <!-- Back to top button -->
+<a id="topBtn"></a>
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav"  >
       <div class="container">
         <a class="navbar-brand js-scroll-trigger" href="#page-top" style="color:black;"><span><i class="fa fa-home"></i></span></a>
@@ -130,18 +168,32 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-md-4 col-sm-6 portfolio-item" data-toggle="modal" href="#portfolioModal1">
-            <a class="portfolio-link" >
+          <div class="col-md-4 col-sm-6 portfolio-item" data-toggle="modal" href="#portfolioModal10">
+            <a class="portfolio-link">
               <div class="portfolio-hover">
-                <!-- <div class="portfolio-hover-content">
+                <!--  <div class="portfolio-hover-content">
                   <i class="fas fa-eye fa-2x"></i>
                 </div> -->
               </div>
-              <img class="img-fluid" src="img/about/first_thumbnail.jpg" style="width: 400px;height: 270px;" alt="">
+              <img class="img-fluid" src="img/about/ossur foot.png" alt="" style="width: 400px;height: 270px;">
             </a>
             <div class="portfolio-caption">
-              <h5>--Tadashi--</h5>
-              <p class="text-muted">Your Personal Healthcare Companion</p>
+              <h5>--EMG controlled Ankle-Foot Prosthesis--</h5>
+              <!-- <p class="text-muted"></p> -->
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 portfolio-item" data-toggle="modal" href="#portfolioModal9">
+            <a class="portfolio-link">
+              <div class="portfolio-hover">
+                <!--  <div class="portfolio-hover-content">
+                  <i class="fas fa-eye fa-2x"></i>
+                </div> -->
+              </div>
+              <img class="img-fluid" src="img/about/Portable_BCI_thumbnail.jpg" alt="" style="width: 400px;height: 270px;">
+            </a>
+            <div class="portfolio-caption">
+              <h5>--Portable Intracortical Brain-Computer Interface System--</h5>
+              <!-- <p class="text-muted"></p> -->
             </div>
           </div>
           <div class="col-md-4 col-sm-6 portfolio-item" data-toggle="modal" href="#portfolioModal2">
@@ -158,18 +210,18 @@
               <p class="text-muted">Restoring Tactile Sensation in Upper Limb Amputees</p>
             </div>
           </div>
-          <div class="col-md-4 col-sm-6 portfolio-item" data-toggle="modal" href="#portfolioModal3">
-            <a class="portfolio-link">
+          <div class="col-md-4 col-sm-6 portfolio-item" data-toggle="modal" href="#portfolioModal1">
+            <a class="portfolio-link" >
               <div class="portfolio-hover">
                 <!-- <div class="portfolio-hover-content">
                   <i class="fas fa-eye fa-2x"></i>
                 </div> -->
               </div>
-              <img class="img-fluid" src="img/about/botanical_thumb.jpg" alt="" style="width: 400px;height: 270px;">
+              <img class="img-fluid" src="img/about/first_thumbnail.jpg" style="width: 400px;height: 270px;" alt="">
             </a>
             <div class="portfolio-caption">
-              <h5>--Botanical Touch--</h5>
-              <p class="text-muted">Plant-Human Interface</p>
+              <h5>--Tadashi--</h5>
+              <p class="text-muted">Your Personal Healthcare Companion</p>
             </div>
           </div>
           <div class="col-md-4 col-sm-6 portfolio-item" data-toggle="modal" href="#portfolioModal4">
@@ -200,6 +252,23 @@
               <p class="text-muted">Mind Controlled Robot</p>
             </div>
           </div>
+          
+          <div class="col-md-4 col-sm-6 portfolio-item" data-toggle="modal" href="#portfolioModal3">
+            <a class="portfolio-link">
+              <div class="portfolio-hover">
+                <!-- <div class="portfolio-hover-content">
+                  <i class="fas fa-eye fa-2x"></i>
+                </div> -->
+              </div>
+              <img class="img-fluid" src="img/about/botanical_thumb.jpg" alt="" style="width: 400px;height: 270px;">
+            </a>
+            <div class="portfolio-caption">
+              <h5>--Botanical Touch--</h5>
+              <p class="text-muted">Plant-Human Interface</p>
+            </div>
+          </div>
+          
+          
           <div class="col-md-4 col-sm-6 portfolio-item" data-toggle="modal" href="#portfolioModal6">
             <a class="portfolio-link">
               <div class="portfolio-hover">
@@ -242,6 +311,8 @@
               <p class="text-muted">Autonomous Biomimetic Marine Drone</p>
             </div>
           </div>
+          
+          
         </div>
       </div>
     </section>
@@ -299,7 +370,6 @@
             <p class="text-center">
               <a href="resume.pdf" target="blank"><button class="btn btn-info">Resume</button></a>
             </p>
-            
             </div>
         </div>
       </div>
@@ -773,6 +843,126 @@ The system could also track EEG,ECG and respiration rate and thus could also be 
         </div>
       </div>
     </div>
+
+    <!-- project 9 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal9" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+           <!-- <i class="fas fa-times" style="font-size:2em;color:grey"></i> -->
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="container">
+            <div class="row">
+              <p class="text-muted"><b style="font-family: sans-serif;">Date: May 2019 - August 2019</b></p>
+              <div class="col-lg-12 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <!-- <h2 class="text-uppercase">Small Mouth</h2> -->
+                  <p class="item-intro text-muted" style="font-size: 25px ;margin-top: -15px;">Portable Intracortical Brain-Computer Interface System</p>
+                  <!-- <p class="item-intro" style="margin-top: -10px;font-size: 20px;font-family: sans-serif; color: black;">
+                    { Biomimetic Robotics, Arduino, Biomechanics}</p> -->
+                  <img class="img-fluid d-block mx-auto" src="img/about/Portable_BCI.jpg" alt="">
+                  <p style="font-family: sans-serif;margin-top: -30px; ">
+                    <i style="font-family: sans-serif;position: relative;">Fig: Participant using Portable iBCI system</i>
+                  </p>
+                  <br><br>
+                  <p style="font-family: sans-serif;text-align: justify;">Intracortical brain-computer interface (iBCI) research has demonstrated the ability for peoplewith paralysis to control computers. However, most of these demonstrations have been limitedto lab settings and there has been a gap in bringing it to the end-user. The majority of thesestudies have evaluated the system based on its usability. However, these cover only a part ofuser experience namely the pragmatic qualities, and not its hedonic qualities. In order to designa system that is user centered, there needs to be an iterative design process between thedeveloper and the user, which addresses the whole user experience.
+                      <br><br>
+                      I worked on the graphical user interface and development of the interface between differentsoftware modules for controlling a tablet PC through brain computer interface. The goal was totransition from an experiment system, where the developer setup the task for the participant to asystem available to an end user where the participant to can independently setup (maybe withthe help of the user) and use the system at home. When the user was able to use the system, itwas evaluated addressing the whole user experience. The iBCI user experience was thencompared to that of touch screen input by a participant with tetraplegia who retained the use ofhis proximal arm but had impaired hand function. <br>
+                  </p>
+                    <!--<a href="www.nitrr.ac.in" style="color: blue;font-family: sans-serif;">Dummmy</a>-->
+                  <br><br>
+                  <img class="img-fluid d-block mx-auto" src="img/about/GUI.png" alt="">
+                  <p style="font-family: sans-serif;margin-top: -30px; ">
+                    <i style="font-family: sans-serif;position: relative;">Fig: Graphical User Interface of the system and painting made by the participant using BCIcontrol</i>
+                  </p>
+                  <br><br>
+                  <p style="font-family: sans-serif;text-align: justify;">The participant was able to use a 3 DOF decoder to complete the center-out task and the shape
+                    tracing task. The user experience assessment revealed high effectiveness (accuracy, low error)
+                    and an overall good match between the user and the assistive device which suggests the user
+                    was rather satisfied with the system when assessed using various questionnaire.</p>
+                    <br><br>
+                  <img class="img-fluid d-block mx-auto" src="img/about/shape tracing.png" alt="">
+                  <p style="font-family: sans-serif;margin-top: -30px; ">
+                    <i style="font-family: sans-serif;position: relative;">Fig: Shape tracing accuracy result comparison of BCI control and Stylus control.</i>
+                  </p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-info btn-sm" data-dismiss="modal">Other Projects</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- project 10 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal10" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+           <!-- <i class="fas fa-times" style="font-size:2em;color:grey"></i> -->
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="container">
+            <div class="row">
+              <p class="text-muted"><b style="font-family: sans-serif;">Date: August 2019 - Present</b></p>
+              <div class="col-lg-12 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <!-- <h2 class="text-uppercase">Small Mouth</h2> -->
+                  <p class="item-intro text-muted" style="font-size: 25px ;margin-top: -15px;">EMG Controlled Ankle foot Prosthesis</p>
+                  <!-- <p class="item-intro" style="margin-top: -10px;font-size: 20px;font-family: sans-serif; color: black;">
+                    { Biomimetic Robotics, Arduino, Biomechanics}</p> -->
+                  <p style="font-family: sans-serif;text-align: justify;">Lower-limb amputees account for about 70% of an estimated 185,000 new amputations
+                    in the U.S. each year and 1 million worldwide. Current prosthetic systems lack natural
+                    feedback and joint control, which, if available, are expected to improve prosthetic use,
+                    mobility, balance and decrease limb and phantom pain. In this work we aim to address
+                    this issue and my contribution is mainly in developing EMG decoding algorithm to
+                    control ankle foot prosthesis with muscle activity and IMU.
+                      <br><br>
+                      Early Swing and Stance Phase were identified by the determining heel strike and toe-off
+                      timestamp using the Force sensor placed on the heel and great toe. The Early and the
+                      Late Swing phase transition was identified by the rotation of the shank along the
+                      Talocrural joint axis using the X-axis of the Gyroscope placed on the Achilles tendon.
+                      These Gait Phase identification parameters were used to label the data for performing a
+                      supervised learning classification. The features used from the Kinematic data were the
+                      mean of the maximum 20 sample values and the mean of the minimum 20 sample
+                      values. The classification model used was Random Forest with 25% of the total data
+                      used as the training data and the other 75% as the testing data. The classification
+                      performed based on only Kinematic data yielded a total classification accuracy of 97%.
+                      <br><br>
+                      The EMG features used for classification were, the mean RMS value in each phase, the
+                      maximum RMS value in each phase, the mean of the maximum half sample values of
+                      the RMS EMG, and the mean of the minimum half sample values of the RMS EMG. The
+                      classification using the Random Forest Classifier yielded 97% accuracy when 30% of
+                      the total data was used as training data and the other 70% as testing data. For each of
+                      the Kinematic and EMG data, dimensionality reduction was performed by finding two
+                      principal components
+                      <br>
+                    </p>
+                    <!--<a href="www.nitrr.ac.in" style="color: blue;font-family: sans-serif;">Dummmy</a>-->
+                  <br><br>
+                  <img class="img-fluid d-block mx-auto" src="img/about/Picture2.png" alt="">
+                  <p style="font-family: sans-serif;margin-top: -30px; ">
+                    <i style="font-family: sans-serif;position: relative;">Fig: Able Bodied Gait Phase classification (a) Time series Muscle Activations and alocrural joint
+                      axis Gyroscope signal with identified gait phases marked. (b) Confusion Matrix for classification
+                      of gait phases using only Kinematics data. (c) Comparison of Normalized 2 Principal
+                      Components of Kinematics data and EMG data. (d) Confusion Matrix for classification of gait
+                      phases using only EMG data.</i>
+                  </p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-info btn-sm" data-dismiss="modal">Other Projects</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -786,5 +976,21 @@ The system could also track EEG,ECG and respiration rate and thus could also be 
 
     <!-- Custom scripts for this template -->
     <script src="js/agency.min.js"></script>
+    <script>
+      var btn = $('#topBtn');
+
+          $(window).scroll(function() {
+            if ($(window).scrollTop() > 300) {
+              btn.addClass('show');
+            } else {
+              btn.removeClass('show');
+            }
+          });
+
+          btn.on('click', function(e) {
+            e.preventDefault();
+            $('html, body').animate({scrollTop:0}, '300');
+          });
+    </script>
   </body>
 </html>
