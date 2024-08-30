@@ -1,409 +1,417 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Nikhil,Nikku,Verma,Nik,NVerma,Nikverma">
-    <meta name="author" content="Nikhil">
-    <title>Nikhil Verma</title>
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom fonts for this template -->
-    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- Custom styles for this template -->
-    <link href="css/agency.min.css" rel="stylesheet">
-    <!-- <link href="css/agency.css" rel="stylesheet"> -->
-	  <style>
-      #topBtn {
-  display: inline-block;
-  background-color: #858984;
-  width: 50px;
-  height: 50px;
-  text-align: center;
-  border-radius: 4px;
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  transition: background-color .3s, 
-    opacity .5s, visibility .5s;
-  opacity: 0;
-  visibility: hidden;
-  z-index: 1000;
-}
-#topBtn::after {
-  content: "\f077";
-  font-family: FontAwesome;
-  font-weight: normal;
-  font-style: normal;
-  font-size: 2em;
-  line-height: 50px;
-  color: #fff;
-}
-#topBtn:hover {
-  cursor: pointer;
-  background-color: #333;
-}
-#topBtn:active {
-  background-color: #555;
-}
-#topBtn.show {
-  opacity: 1;
-  visibility: visible;
-}
-      .test img {
-        transform: rotate(270deg);
-        ...
-        margin: 10px 0px;
-      }
-      @font-face {
-         font-family: myFirstFont;
-         src: url(strasua.ttf);
-      }
-      * {
-         font-family: myFirstFont;
-      }
-      $redColor: rgba(244,67,54,1);
-      $blueColor:rgba(33,150,243,1);
 
-      .flex-center {
-        width: 100%;
-        min-height: 50vh;
-        
-        background: #000;
-        
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: center;
-        -webkit-justify-content: center;
-            -ms-flex-pack: center;
-                justify-content: center;
-        -webkit-box-align: center;
-        -webkit-align-items: center;
-            -ms-flex-align: center;
-                align-items: center;
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Nikhil,Nikku,Verma,Nik,NVerma,Nikverma">
+  <meta name="author" content="Nikhil">
+  <title>Nikhil Verma</title>
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom fonts for this template -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet'
+    type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Custom styles for this template -->
+  <link href="css/agency.min.css" rel="stylesheet">
+  <!-- <link href="css/agency.css" rel="stylesheet"> -->
+  <style>
+    #topBtn {
+      display: inline-block;
+      background-color: #858984;
+      width: 50px;
+      height: 50px;
+      text-align: center;
+      border-radius: 4px;
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      transition: background-color .3s,
+        opacity .5s, visibility .5s;
+      opacity: 0;
+      visibility: hidden;
+      z-index: 1000;
+    }
+
+    #topBtn::after {
+      content: "\f077";
+      font-family: FontAwesome;
+      font-weight: normal;
+      font-style: normal;
+      font-size: 2em;
+      line-height: 50px;
+      color: #fff;
+    }
+
+    #topBtn:hover {
+      cursor: pointer;
+      background-color: #333;
+    }
+
+    #topBtn:active {
+      background-color: #555;
+    }
+
+    #topBtn.show {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .test img {
+      transform: rotate(270deg);
+      ... margin: 10px 0px;
+    }
+
+    @font-face {
+      font-family: myFirstFont;
+      src: url(strasua.ttf);
+    }
+
+    * {
+      font-family: myFirstFont;
+    }
+
+    $redColor: rgba(244, 67, 54, 1);
+    $blueColor: rgba(33, 150, 243, 1);
+
+    .flex-center {
+      width: 100%;
+      min-height: 50vh;
+
+      background: #000;
+
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+    }
+
+    .icon-3d {
+      padding: 10px;
+      -webkit-animation: icon3d 200ms 10;
+      animation: icon3d 200ms 10;
+      color: #fff;
+
+      &:hover {
+        -webkit-animation: icon3d 200ms infinite;
+        animation: icon3d 200ms infinite;
+      }
+    }
+
+    @keyframes icon3d {
+      0% {
+        text-shadow: 5px 4px $redColor, -5px -6px $blueColor;
       }
 
-      .icon-3d {
-        padding: 10px;
-        -webkit-animation: icon3d 200ms 10;
-        animation: icon3d 200ms 10;
-        color: #fff;
-        &:hover {
-          -webkit-animation: icon3d 200ms infinite;
-                animation: icon3d 200ms infinite;
-        }
+      25% {
+        text-shadow: -5px -6px $redColor, 5px 4px $blueColor;
       }
 
-      @keyframes icon3d {
-        0% {
-          text-shadow: 5px 4px $redColor, -5px -6px $blueColor;
-        }
-        25% {
-          text-shadow: -5px -6px $redColor, 5px 4px $blueColor;
-        }
-        50% {
-          text-shadow: 5px -4px $redColor, -8px 4px $blueColor;
-        }
-        75% {
-          text-shadow: -8px -4px $redColor, -5px -4px $blueColor;
-        }
-        100% {
-          text-shadow: -5px 0 $redColor, 5px -4px $blueColor;
-        }
+      50% {
+        text-shadow: 5px -4px $redColor, -8px 4px $blueColor;
       }
-    </style>
-  </head>
-  <body id="page-top">
-    <!-- Navigation -->
-    <!-- Back to top button -->
-<a id="topBtn"></a>
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav"  >
-      <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top" style="color:black;"><span><i class="fa fa-home"></i></span></a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          Menu
-          <i class="fas fa-bars"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav text-uppercase ml-auto">
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#portfolio"><b>Portfolio</b></a>
-            </li>
-		  <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#press"><b>Press</b></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about"><b>About</b></a>
-            </li>
-<!--             <li class="nav-item">
+
+      75% {
+        text-shadow: -8px -4px $redColor, -5px -4px $blueColor;
+      }
+
+      100% {
+        text-shadow: -5px 0 $redColor, 5px -4px $blueColor;
+      }
+    }
+  </style>
+</head>
+
+<body id="page-top">
+  <!-- Navigation -->
+  <!-- Back to top button -->
+  <a id="topBtn"></a>
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top" style="color:black;"><span><i
+            class="fa fa-home"></i></span></a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+        data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+        aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav text-uppercase ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#portfolio"><b>Portfolio</b></a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#press"><b>Press</b></a>
+          </li>  -->
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about"><b>About</b></a>
+          </li>
+          <!--             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="resume.pdf" target="_blank"><b>Resume</b></a>
             </li> -->
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact"><b>Contact</b></a>
-            </li>
-          </ul>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#contact"><b>Contact</b></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Header --> <br>
+  <br> <br>
+  <header class="masthead">
+    <div class="container">
+      <div class="intro-text" style="height:653px;color:black;margin-top:-80px;font-size:4.589999em;">
+        NIKHIL VERMA
+      </div>
+    </div>
+  </header>
+
+  <section class="bg-light" id="portfolio" style="padding-bottom: 0px">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Portfolio</h2>
+          <h3 class="section-subheading text-muted">**New Projects Coming Soon**</h3>
         </div>
       </div>
-    </nav>
-    <!-- Header -->  <br>
-	  <br>  <br>
-    <header class="masthead">
-      <div class="container">
-        <div class="intro-text" style="height:653px;color:black;margin-top:-80px;font-size:4.589999em;">
-            NIKHIL VERMA     
+      <div class="row">
+<!--         <div class="col-md-4 col-sm-6 portfolio-item" data-toggle="modal" href="#portfolioModal11">
+          <a class="portfolio-link">
+            <div class="portfolio-hover">
+            </div>
+            <img class="img-fluid" src="img/about/ossur foot.png" alt="" style="width: 400px;height: 270px;">
+          </a>
+          <div class="portfolio-caption">
+            <h5>--project 1--</h5>
+            
+          </div>
+        </div> -->
+
+<!--         <div class="col-md-4 col-sm-6 portfolio-item" data-toggle="modal" href="#portfolioModal12">
+          <a class="portfolio-link">
+            <div class="portfolio-hover">
+            </div>
+            <img class="img-fluid" src="img/about/ossur foot.png" alt="" style="width: 400px;height: 270px;">
+          </a>
+          <div class="portfolio-caption">
+            <h5>--p2--</h5>
+          </div>
+        </div> -->
+
+<!--         <div class="col-md-4 col-sm-6 portfolio-item" data-toggle="modal" href="#portfolioModal13">
+          <a class="portfolio-link">
+            <div class="portfolio-hover">
+            </div>
+            <img class="img-fluid" src="img/about/ossur foot.png" alt="" style="width: 400px;height: 270px;">
+          </a>
+          <div class="portfolio-caption">
+            <h5>--p3--</h5>
+            
+          </div>
+        </div> -->
+
+        <div class="col-md-4 col-sm-6 portfolio-item" data-toggle="modal" href="#portfolioModal10">
+          <a class="portfolio-link">
+            <div class="portfolio-hover">
+              <!--  <div class="portfolio-hover-content">
+                  <i class="fas fa-eye fa-2x"></i>
+                </div> -->
+            </div>
+            <img class="img-fluid" src="img/about/ossur foot.png" alt="" style="width: 400px;height: 270px;">
+          </a>
+          <div class="portfolio-caption">
+            <h5>--EMG controlled Ankle-Foot Prosthesis--</h5>
+            <!-- <p class="text-muted"></p> -->
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 portfolio-item" data-toggle="modal" href="#portfolioModal9">
+          <a class="portfolio-link">
+            <div class="portfolio-hover">
+              <!--  <div class="portfolio-hover-content">
+                  <i class="fas fa-eye fa-2x"></i>
+                </div> -->
+            </div>
+            <img class="img-fluid" src="img/about/Portable_BCI_thumbnail.jpg" alt=""
+              style="width: 400px;height: 270px;">
+          </a>
+          <div class="portfolio-caption">
+            <h5>--Portable Intracortical Brain-Computer Interface System--</h5>
+            <!-- <p class="text-muted"></p> -->
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 portfolio-item" data-toggle="modal" href="#portfolioModal4">
+          <a class="portfolio-link">
+            <div class="portfolio-hover">
+              <!-- <div class="portfolio-hover-content">
+                  <i class="fas fa-eye fa-2x"></i>
+                </div> -->
+            </div>
+            <img class="img-fluid" src="img/about/dormio.jpeg" alt="" style="width: 400px;height: 270px;">
+          </a>
+          <div class="portfolio-caption">
+            <h5>--Dormio--</h5>
+            <p class="text-muted">Interfacing with Dreams to Augment Human Creativity</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 portfolio-item" data-toggle="modal" href="#portfolioModal2">
+          <a class="portfolio-link">
+            <div class="portfolio-hover">
+              <!-- <div class="portfolio-hover-content">
+                  <i class="fas fa-eye fa-2x"></i>
+                </div> -->
+            </div>
+            <img class="img-fluid" src="img/about/sparsh_thumnail.JPG" alt="" style="width: 400px;height: 270px;">
+          </a>
+          <div class="portfolio-caption">
+            <h5>--Sparsh--</h5>
+            <p class="text-muted">Restoring Tactile Sensation in Upper Limb Amputees</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 portfolio-item" data-toggle="modal" href="#portfolioModal1">
+          <a class="portfolio-link">
+            <div class="portfolio-hover">
+              <!-- <div class="portfolio-hover-content">
+                  <i class="fas fa-eye fa-2x"></i>
+                </div> -->
+            </div>
+            <img class="img-fluid" src="img/about/first_thumbnail.jpg" style="width: 400px;height: 270px;" alt="">
+          </a>
+          <div class="portfolio-caption">
+            <h5>--Tadashi--</h5>
+            <p class="text-muted">Your Personal Healthcare Companion</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 portfolio-item" data-toggle="modal" href="#portfolioModal5">
+          <a class="portfolio-link">
+            <div class="portfolio-hover">
+              <!-- <div class="portfolio-hover-content">
+                  <i class="fas fa-eye fa-2x"></i>
+                </div> -->
+            </div>
+            <img class="img-fluid" src="img/about/brainsense_2.JPG" alt="" style="width: 400px;height: 270px;">
+          </a>
+          <div class="portfolio-caption">
+            <h5>--BrainSense--</h5>
+            <p class="text-muted">Mind Controlled Robot</p>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6 portfolio-item" data-toggle="modal" href="#portfolioModal3">
+          <a class="portfolio-link">
+            <div class="portfolio-hover">
+              <!-- <div class="portfolio-hover-content">
+                  <i class="fas fa-eye fa-2x"></i>
+                </div> -->
+            </div>
+            <img class="img-fluid" src="img/about/botanical_thumb.jpg" alt="" style="width: 400px;height: 270px;">
+          </a>
+          <div class="portfolio-caption">
+            <h5>--Botanical Touch--</h5>
+            <p class="text-muted">Plant-Human Interface</p>
+          </div>
+        </div>
+
+
+        <div class="col-md-4 col-sm-6 portfolio-item" data-toggle="modal" href="#portfolioModal6">
+          <a class="portfolio-link">
+            <div class="portfolio-hover">
+              <!-- <div class="portfolio-hover-content">
+                  <i class="fas fa-eye fa-2x"></i>
+                </div> -->
+            </div>
+            <img class="img-fluid" src="img/about/sleep.JPG" alt="" style="width: 400px;height: 270px;">
+          </a>
+          <div class="portfolio-caption">
+            <h5>--Engineering Sleep--</h5>
+            <p class="text-muted">Sleep Monitoring and Manipulation System</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 portfolio-item" data-toggle="modal" href="#portfolioModal7">
+          <a class="portfolio-link">
+            <div class="portfolio-hover">
+              <!-- <div class="portfolio-hover-content">
+                  <i class="fas fa-eye fa-2x"></i>
+                </div> -->
+            </div>
+            <img class="img-fluid" src="img/about/plant_thumb.JPG" style="width: 400px;height: 270px;" alt="">
+          </a>
+          <div class="portfolio-caption">
+            <h5>--Mandrake-The Shouting Plant--</h5>
+            <p class="text-muted">Plant-Computer Interface</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 portfolio-item" data-toggle="modal" href="#portfolioModal8">
+          <a class="portfolio-link">
+            <div class="portfolio-hover">
+              <!--  <div class="portfolio-hover-content">
+                  <i class="fas fa-eye fa-2x"></i>
+                </div> -->
+            </div>
+            <img class="img-fluid" src="img/about/mouth.jpg" alt="" style="width: 400px;height: 270px;">
+          </a>
+          <div class="portfolio-caption">
+            <h5>--Small Mouth--</h5>
+            <p class="text-muted">Autonomous Biomimetic Marine Drone</p>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+  <!-- Team -->
+
+  <!--press -->
+<!--   <section id="press" style="color:black;">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 ">
+          <center>
+            <h2 class="section-heading text-uppercase">Press</h2>
+
+            <div class="flex-center">
+
+            </div>
+          </center>
         </div>
       </div>
-    </header>
+      <center>
 
-    <section class="bg-light" id="portfolio" style="padding-bottom: 0px">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">Portfolio</h2>
-            <h3 class="section-subheading text-muted">**New Projects Coming Soon**</h3>
-          </div>
-        </div>
-        <div class="row">
-		<div class="col-md-4 col-sm-6 portfolio-item" data-toggle="modal" href="#portfolioModal11">
-            <a class="portfolio-link">
-              <div class="portfolio-hover">
-                <!--  <div class="portfolio-hover-content">
-                  <i class="fas fa-eye fa-2x"></i>
-                </div> -->
-              </div>
-              <img class="img-fluid" src="img/about/ossur foot.png" alt="" style="width: 400px;height: 270px;">
-            </a>
-            <div class="portfolio-caption">
-              <h5>--project 1--</h5>
-              <!-- <p class="text-muted"></p> -->
-            </div>
-          </div>
+      </center>
+    </div>
+  </section> -->
 
-		<div class="col-md-4 col-sm-6 portfolio-item" data-toggle="modal" href="#portfolioModal12">
-            <a class="portfolio-link">
-              <div class="portfolio-hover">
-                <!--  <div class="portfolio-hover-content">
-                  <i class="fas fa-eye fa-2x"></i>
-                </div> -->
-              </div>
-              <img class="img-fluid" src="img/about/ossur foot.png" alt="" style="width: 400px;height: 270px;">
-            </a>
-            <div class="portfolio-caption">
-              <h5>--p2--</h5>
-              <!-- <p class="text-muted"></p> -->
-            </div>
-          </div>
-
-		<div class="col-md-4 col-sm-6 portfolio-item" data-toggle="modal" href="#portfolioModal13">
-            <a class="portfolio-link">
-              <div class="portfolio-hover">
-                <!--  <div class="portfolio-hover-content">
-                  <i class="fas fa-eye fa-2x"></i>
-                </div> -->
-              </div>
-              <img class="img-fluid" src="img/about/ossur foot.png" alt="" style="width: 400px;height: 270px;">
-            </a>
-            <div class="portfolio-caption">
-              <h5>--p3--</h5>
-              <!-- <p class="text-muted"></p> -->
-            </div>
-          </div>
-		
-          <div class="col-md-4 col-sm-6 portfolio-item" data-toggle="modal" href="#portfolioModal10">
-            <a class="portfolio-link">
-              <div class="portfolio-hover">
-                <!--  <div class="portfolio-hover-content">
-                  <i class="fas fa-eye fa-2x"></i>
-                </div> -->
-              </div>
-              <img class="img-fluid" src="img/about/ossur foot.png" alt="" style="width: 400px;height: 270px;">
-            </a>
-            <div class="portfolio-caption">
-              <h5>--EMG controlled Ankle-Foot Prosthesis--</h5>
-              <!-- <p class="text-muted"></p> -->
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6 portfolio-item" data-toggle="modal" href="#portfolioModal9">
-            <a class="portfolio-link">
-              <div class="portfolio-hover">
-                <!--  <div class="portfolio-hover-content">
-                  <i class="fas fa-eye fa-2x"></i>
-                </div> -->
-              </div>
-              <img class="img-fluid" src="img/about/Portable_BCI_thumbnail.jpg" alt="" style="width: 400px;height: 270px;">
-            </a>
-            <div class="portfolio-caption">
-              <h5>--Portable Intracortical Brain-Computer Interface System--</h5>
-              <!-- <p class="text-muted"></p> -->
-            </div>
-          </div>
-	<div class="col-md-4 col-sm-6 portfolio-item" data-toggle="modal" href="#portfolioModal4">
-            <a class="portfolio-link">
-              <div class="portfolio-hover">
-                <!-- <div class="portfolio-hover-content">
-                  <i class="fas fa-eye fa-2x"></i>
-                </div> -->
-              </div>
-              <img class="img-fluid" src="img/about/dormio.jpeg" alt="" style="width: 400px;height: 270px;">
-            </a>
-            <div class="portfolio-caption">
-              <h5>--Dormio--</h5>
-              <p class="text-muted">Interfacing with Dreams to Augment Human Creativity</p>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6 portfolio-item" data-toggle="modal" href="#portfolioModal2">
-            <a class="portfolio-link">
-              <div class="portfolio-hover">
-                <!-- <div class="portfolio-hover-content">
-                  <i class="fas fa-eye fa-2x"></i>
-                </div> -->
-              </div>
-              <img class="img-fluid" src="img/about/sparsh_thumnail.JPG" alt="" style="width: 400px;height: 270px;">
-            </a>
-            <div class="portfolio-caption">
-              <h5>--Sparsh--</h5>
-              <p class="text-muted">Restoring Tactile Sensation in Upper Limb Amputees</p>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6 portfolio-item" data-toggle="modal" href="#portfolioModal1">
-            <a class="portfolio-link" >
-              <div class="portfolio-hover">
-                <!-- <div class="portfolio-hover-content">
-                  <i class="fas fa-eye fa-2x"></i>
-                </div> -->
-              </div>
-              <img class="img-fluid" src="img/about/first_thumbnail.jpg" style="width: 400px;height: 270px;" alt="">
-            </a>
-            <div class="portfolio-caption">
-              <h5>--Tadashi--</h5>
-              <p class="text-muted">Your Personal Healthcare Companion</p>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6 portfolio-item" data-toggle="modal" href="#portfolioModal5">
-            <a class="portfolio-link">
-              <div class="portfolio-hover">
-                <!-- <div class="portfolio-hover-content">
-                  <i class="fas fa-eye fa-2x"></i>
-                </div> -->
-              </div>
-              <img class="img-fluid" src="img/about/brainsense_2.JPG" alt="" style="width: 400px;height: 270px;">
-            </a>
-            <div class="portfolio-caption">
-              <h5>--BrainSense--</h5>
-              <p class="text-muted">Mind Controlled Robot</p>
-            </div>
-          </div>
-          
-          <div class="col-md-4 col-sm-6 portfolio-item" data-toggle="modal" href="#portfolioModal3">
-            <a class="portfolio-link">
-              <div class="portfolio-hover">
-                <!-- <div class="portfolio-hover-content">
-                  <i class="fas fa-eye fa-2x"></i>
-                </div> -->
-              </div>
-              <img class="img-fluid" src="img/about/botanical_thumb.jpg" alt="" style="width: 400px;height: 270px;">
-            </a>
-            <div class="portfolio-caption">
-              <h5>--Botanical Touch--</h5>
-              <p class="text-muted">Plant-Human Interface</p>
-            </div>
-          </div>
-          
-          
-          <div class="col-md-4 col-sm-6 portfolio-item" data-toggle="modal" href="#portfolioModal6">
-            <a class="portfolio-link">
-              <div class="portfolio-hover">
-                <!-- <div class="portfolio-hover-content">
-                  <i class="fas fa-eye fa-2x"></i>
-                </div> -->
-              </div>
-              <img class="img-fluid" src="img/about/sleep.JPG" alt="" style="width: 400px;height: 270px;">
-            </a>
-            <div class="portfolio-caption">
-              <h5>--Engineering Sleep--</h5>
-              <p class="text-muted">Sleep Monitoring and Manipulation System</p>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6 portfolio-item" data-toggle="modal" href="#portfolioModal7">
-            <a class="portfolio-link" >
-              <div class="portfolio-hover">
-                <!-- <div class="portfolio-hover-content">
-                  <i class="fas fa-eye fa-2x"></i>
-                </div> -->
-              </div>
-              <img class="img-fluid" src="img/about/plant_thumb.JPG" style="width: 400px;height: 270px;" alt="">
-            </a>
-            <div class="portfolio-caption">
-              <h5>--Mandrake-The Shouting Plant--</h5>
-              <p class="text-muted">Plant-Computer Interface</p>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6 portfolio-item" data-toggle="modal" href="#portfolioModal8">
-            <a class="portfolio-link">
-              <div class="portfolio-hover">
-               <!--  <div class="portfolio-hover-content">
-                  <i class="fas fa-eye fa-2x"></i>
-                </div> -->
-              </div>
-              <img class="img-fluid" src="img/about/mouth.jpg" alt="" style="width: 400px;height: 270px;">
-            </a>
-            <div class="portfolio-caption">
-              <h5>--Small Mouth--</h5>
-              <p class="text-muted">Autonomous Biomimetic Marine Drone</p>
-            </div>
-          </div>
-          
-          
+  <!-- About -->
+  <section id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">About</h2>
+          <!-- <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3> -->
         </div>
       </div>
-    </section>
-    <!-- Team -->
-
-	  <!-- media mentions -->
-	  <!-- Contact -->
-    <section id="press" style="color:black;" >
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 ">
-            <center >
-              <h2 class="section-heading text-uppercase" >Media Mentions</h2>
-              
-              <div class="flex-center">
-                
+      <div class="row">
+        <div class="col-lg-12">
+          <ul class="timeline">
+            <li>
+              <div class="timeline-image">
+                <img class="rounded-circle img-fluid" src="img/about/1.JPG" alt="">
               </div>
-            </center> 
-          </div>
-        </div>
-        <center>
-           
-        </center>
-      </div>
-    </section>
-
-    <!-- About -->
-    <section id="about" >
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">About</h2>
-            <!-- <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3> -->
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-12">
-            <ul class="timeline">
-              <li>
-                <div class="timeline-image">
-                  <img class="rounded-circle img-fluid" src="img/about/1.JPG" alt="">
-                </div>
-                <!-- <div class="timeline-panel">
+              <!-- <div class="timeline-panel">
                   <div class="timeline-heading">
                     <h4>2009-2011</h4>
                     <h4 class="subheading">Our Humble Beginnings</h4>
@@ -414,23 +422,29 @@
 
                 </div>
  -->
-              </li>
-            </ul>
-            <!-- about myself -->
-            <!-- <br> -->
-            <br>
-            <p style="text-align: center; font-family: sans-serif;">**Last Update:Long-time ago**
-		    <br>
-		    <br>
-	    I am Nikhil Verma, a Senior Undergraduate studying Biomedical Engineering from National Institute of Technology, Raipur. I was born in Bhopal, India.
-              <br>
-              <br>
-            During the course of my Undergraduate degree, I have had vast areas of interests. I have worked on all three aspects of HCI- Sensory, Machine Learning, and Sensory Augmentation. I have also worked on Plant-computer Interface, Plant-Human interface, Computer Vision, and Deep Learning.
+            </li>
+          </ul>
+          <!-- about myself -->
+          <!-- <br> -->
+          <br>
+          <p style="text-align: center; font-family: sans-serif;">**Last Update:Long-time ago**
             <br>
             <br>
-            I have been especially enthralled by recent developments in the field of Brain-Computer Interfaces, Neural Engineering and Artificial Intelligence. In my fantasy world, I see these two combine, working in symbiosis with each other. I believe this would hit a notch in human evolution augmenting his physical and cognitive abilities.
-            </p>
-            <!-- <div class="row">
+            I am Nikhil Verma, a Senior Undergraduate studying Biomedical Engineering from National Institute of
+            Technology, Raipur. I was born in Bhopal, India.
+            <br>
+            <br>
+            During the course of my Undergraduate degree, I have had vast areas of interests. I have worked on all three
+            aspects of HCI- Sensory, Machine Learning, and Sensory Augmentation. I have also worked on Plant-computer
+            Interface, Plant-Human interface, Computer Vision, and Deep Learning.
+            <br>
+            <br>
+            I have been especially enthralled by recent developments in the field of Brain-Computer Interfaces, Neural
+            Engineering and Artificial Intelligence. In my fantasy world, I see these two combine, working in symbiosis
+            with each other. I believe this would hit a notch in human evolution augmenting his physical and cognitive
+            abilities.
+          </p>
+          <!-- <div class="row">
               <div class="col-sm-6">
                 dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consecte
               </div>
@@ -438,386 +452,474 @@
                 dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consecte
               </div>
             </div> -->
-            <br>
-            <p class="text-center">
-              <a href="resume.pdf" target="blank"><button class="btn btn-info">Resume</button></a>
-            </p>
-            </div>
+          <br>
+          <p class="text-center">
+            <a href="resume.pdf" target="blank"><button class="btn btn-info">Resume</button></a>
+          </p>
         </div>
       </div>
-    </section>
-    <!-- Portfolio Grid -->
-    
-    <!-- Footer -->
-    <!-- Contact -->
-    <section id="contact" style="color:black;" >
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 ">
-            <center >
-              <h2 class="section-heading text-uppercase" >Contact Me</h2>
-              <!-- <div class="flex-center">
+    </div>
+  </section>
+  <!-- Portfolio Grid -->
+
+  <!-- Footer -->
+  <!-- Contact -->
+  <section id="contact" style="color:black;">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 ">
+          <center>
+            <h2 class="section-heading text-uppercase">Contact Me</h2>
+            <!-- <div class="flex-center">
                 <a href="https://www.linkedin.com/in/nikhil-verma-bme"><i style="color:black;" class="fab fa-linkedin-in fa-2x icon-3d"></i></a>
                  <a href="https://www.instagram.com/nikhil._.verma/?hl=en"> <i style="color:black;" class="fa fa-instagram fa-2x icon-3d"></i></a>
                  <a href="https://www.facebook.com/nikhil.verma.543"> <i  style="color:black;" class="fa fa-facebook fa-2x icon-3d"></i></a>
               </div> -->
-              <div class="flex-center">
-                <ul class="list-inline social-buttons">                            
-                  <li class="list-inline-item">
-                    <a href="https://www.linkedin.com/in/nikhil-verma-bme" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a href="https://www.instagram.com/nikhil._.verma/?hl=en" target="_blank"> <i class="fa fa-instagram"></i></a>
-                  </li>
-                  <li class="list-inline-item">
-                     <a href="https://www.facebook.com/nikhil.verma.543" target="_blank"> <i class="fa fa-facebook"></i></a>
-                  </li>
-                </ul>
-              </div>
-            </center> 
-          </div>
-        </div>
-        <center>
-           
-        </center>
-      </div>
-    </section>
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <span class="copyright">Revised Nov,2019   Copyright © Nikhil Verma 2019</span>
-          </div>
+            <div class="flex-center">
+              <ul class="list-inline social-buttons">
+                <li class="list-inline-item">
+                  <a href="https://www.linkedin.com/in/nikhil-verma-bme" target="_blank"><i
+                      class="fab fa-linkedin-in"></i></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://www.instagram.com/nikhil._.verma/?hl=en" target="_blank"> <i
+                      class="fa fa-instagram"></i></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://www.facebook.com/nikhil.verma.543" target="_blank"> <i
+                      class="fa fa-facebook"></i></a>
+                </li>
+              </ul>
+            </div>
+          </center>
         </div>
       </div>
-    </footer>
-    <!-- Portfolio Modals -->
+      <center>
 
-	<!-- project 11 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal11" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-           <!-- <i class="fas fa-times" style="font-size:2em;color:grey"></i> -->
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
-          </div>
-          <div class="container">
-            <div class="row">
-              <p class="text-muted"><b style="font-family: sans-serif;">Date: </b></p>
-              <div class="col-lg-12 mx-auto">
-                <div class="modal-body">
-                  <!-- Project Details Go Here -->
-                  <!-- <h2 class="text-uppercase">Small Mouth</h2> -->
-                  <p class="item-intro text-muted" style="font-size: 25px ;margin-top: -15px;">Portable Intracortical Brain-Computer Interface System</p>
-                  <!-- <p class="item-intro" style="margin-top: -10px;font-size: 20px;font-family: sans-serif; color: black;">
+      </center>
+    </div>
+  </section>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <span class="copyright">Revised Nov,2019 Copyright © Nikhil Verma 2019</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Portfolio Modals -->
+
+  <!-- project 11 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal11" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <!-- <i class="fas fa-times" style="font-size:2em;color:grey"></i> -->
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="container">
+          <div class="row">
+            <p class="text-muted"><b style="font-family: sans-serif;">Date: </b></p>
+            <div class="col-lg-12 mx-auto">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <!-- <h2 class="text-uppercase">Small Mouth</h2> -->
+                <p class="item-intro text-muted" style="font-size: 25px ;margin-top: -15px;">Portable Intracortical
+                  Brain-Computer Interface System</p>
+                <!-- <p class="item-intro" style="margin-top: -10px;font-size: 20px;font-family: sans-serif; color: black;">
                     { Biomimetic Robotics, Arduino, Biomechanics}</p> -->
-                  <img class="img-fluid d-block mx-auto" src="img/about/Portable_BCI.jpg" alt="">
-                  <p style="font-family: sans-serif;margin-top: -30px; ">
-                    <i style="font-family: sans-serif;position: relative;">Fig: Participant using Portable iBCI system</i>
-                  </p>
+                <img class="img-fluid d-block mx-auto" src="img/about/Portable_BCI.jpg" alt="">
+                <p style="font-family: sans-serif;margin-top: -30px; ">
+                  <i style="font-family: sans-serif;position: relative;">Fig: Participant using Portable iBCI system</i>
+                </p>
+                <br><br>
+                <p style="font-family: sans-serif;text-align: justify;">Intracortical brain-computer interface (iBCI)
+                  research has demonstrated the ability for peoplewith paralysis to control computers. However, most of
+                  these demonstrations have been limitedto lab settings and there has been a gap in bringing it to the
+                  end-user. The majority of thesestudies have evaluated the system based on its usability. However,
+                  these cover only a part ofuser experience namely the pragmatic qualities, and not its hedonic
+                  qualities. In order to designa system that is user centered, there needs to be an iterative design
+                  process between thedeveloper and the user, which addresses the whole user experience.
                   <br><br>
-                  <p style="font-family: sans-serif;text-align: justify;">Intracortical brain-computer interface (iBCI) research has demonstrated the ability for peoplewith paralysis to control computers. However, most of these demonstrations have been limitedto lab settings and there has been a gap in bringing it to the end-user. The majority of thesestudies have evaluated the system based on its usability. However, these cover only a part ofuser experience namely the pragmatic qualities, and not its hedonic qualities. In order to designa system that is user centered, there needs to be an iterative design process between thedeveloper and the user, which addresses the whole user experience.
-                      <br><br>
-                      I worked on the graphical user interface and development of the interface between differentsoftware modules for controlling a tablet PC through brain computer interface. The goal was totransition from an experiment system, where the developer setup the task for the participant to asystem available to an end user where the participant to can independently setup (maybe withthe help of the user) and use the system at home. When the user was able to use the system, itwas evaluated addressing the whole user experience. The iBCI user experience was thencompared to that of touch screen input by a participant with tetraplegia who retained the use ofhis proximal arm but had impaired hand function. <br>
-                  </p>
-                    <!--<a href="www.nitrr.ac.in" style="color: blue;font-family: sans-serif;">Dummmy</a>-->
+                  I worked on the graphical user interface and development of the interface between differentsoftware
+                  modules for controlling a tablet PC through brain computer interface. The goal was totransition from
+                  an experiment system, where the developer setup the task for the participant to asystem available to
+                  an end user where the participant to can independently setup (maybe withthe help of the user) and use
+                  the system at home. When the user was able to use the system, itwas evaluated addressing the whole
+                  user experience. The iBCI user experience was thencompared to that of touch screen input by a
+                  participant with tetraplegia who retained the use ofhis proximal arm but had impaired hand function.
                   <br>
-                  <div  class="embed-responsive embed-responsive-16by9" style="overflow:auto;">
-                    <video controls="controls">
-                      <source src="img/about/BCI_control.mp4" type="video/mp4">
-                    </video>
+                </p>
+                <!--<a href="www.nitrr.ac.in" style="color: blue;font-family: sans-serif;">Dummmy</a>-->
+                <br>
+                <div class="embed-responsive embed-responsive-16by9" style="overflow:auto;">
+                  <video controls="controls">
+                    <source src="img/about/BCI_control.mp4" type="video/mp4">
+                  </video>
                 </div>
-                  <br><br>
-                  <img class="img-fluid d-block mx-auto" src="img/about/GUI.png" alt="">
-                  <p style="font-family: sans-serif;margin-top: -30px; ">
-                    <i style="font-family: sans-serif;position: relative;">Fig: Graphical User Interface of the system and painting made by the participant using BCIcontrol</i>
-                  </p>
-                  <br><br>
-                  <p style="font-family: sans-serif;text-align: justify;">The participant was able to use a 3 DOF decoder to complete the center-out task and the shape
-                    tracing task. The user experience assessment revealed high effectiveness (accuracy, low error)
-                    and an overall good match between the user and the assistive device which suggests the user
-                    was rather satisfied with the system when assessed using various questionnaire.</p>
-                    <br><br>
-                  <img class="img-fluid d-block mx-auto" src="img/about/shape tracing.png" alt="">
-                  <p style="font-family: sans-serif;margin-top: -30px; ">
-                    <i style="font-family: sans-serif;position: relative;">Fig: Shape tracing accuracy result comparison of BCI control and Stylus control.</i>
-                  </p>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-info btn-sm" data-dismiss="modal">Other Projects</button>
-                </div>
+                <br><br>
+                <img class="img-fluid d-block mx-auto" src="img/about/GUI.png" alt="">
+                <p style="font-family: sans-serif;margin-top: -30px; ">
+                  <i style="font-family: sans-serif;position: relative;">Fig: Graphical User Interface of the system and
+                    painting made by the participant using BCIcontrol</i>
+                </p>
+                <br><br>
+                <p style="font-family: sans-serif;text-align: justify;">The participant was able to use a 3 DOF decoder
+                  to complete the center-out task and the shape
+                  tracing task. The user experience assessment revealed high effectiveness (accuracy, low error)
+                  and an overall good match between the user and the assistive device which suggests the user
+                  was rather satisfied with the system when assessed using various questionnaire.</p>
+                <br><br>
+                <img class="img-fluid d-block mx-auto" src="img/about/shape tracing.png" alt="">
+                <p style="font-family: sans-serif;margin-top: -30px; ">
+                  <i style="font-family: sans-serif;position: relative;">Fig: Shape tracing accuracy result comparison
+                    of BCI control and Stylus control.</i>
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-info btn-sm" data-dismiss="modal">Other Projects</button>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-	  	<!-- project 12 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal12" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-           <!-- <i class="fas fa-times" style="font-size:2em;color:grey"></i> -->
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
-          </div>
-          <div class="container">
-            <div class="row">
-              <p class="text-muted"><b style="font-family: sans-serif;">Date: </b></p>
-              <div class="col-lg-12 mx-auto">
-                <div class="modal-body">
-                  <!-- Project Details Go Here -->
-                  <!-- <h2 class="text-uppercase">Small Mouth</h2> -->
-                  <p class="item-intro text-muted" style="font-size: 25px ;margin-top: -15px;">Portable Intracortical Brain-Computer Interface System</p>
-                  <!-- <p class="item-intro" style="margin-top: -10px;font-size: 20px;font-family: sans-serif; color: black;">
+  <!-- project 12 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal12" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <!-- <i class="fas fa-times" style="font-size:2em;color:grey"></i> -->
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="container">
+          <div class="row">
+            <p class="text-muted"><b style="font-family: sans-serif;">Date: </b></p>
+            <div class="col-lg-12 mx-auto">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <!-- <h2 class="text-uppercase">Small Mouth</h2> -->
+                <p class="item-intro text-muted" style="font-size: 25px ;margin-top: -15px;">Portable Intracortical
+                  Brain-Computer Interface System</p>
+                <!-- <p class="item-intro" style="margin-top: -10px;font-size: 20px;font-family: sans-serif; color: black;">
                     { Biomimetic Robotics, Arduino, Biomechanics}</p> -->
-                  <img class="img-fluid d-block mx-auto" src="img/about/Portable_BCI.jpg" alt="">
-                  <p style="font-family: sans-serif;margin-top: -30px; ">
-                    <i style="font-family: sans-serif;position: relative;">Fig: Participant using Portable iBCI system</i>
-                  </p>
+                <img class="img-fluid d-block mx-auto" src="img/about/Portable_BCI.jpg" alt="">
+                <p style="font-family: sans-serif;margin-top: -30px; ">
+                  <i style="font-family: sans-serif;position: relative;">Fig: Participant using Portable iBCI system</i>
+                </p>
+                <br><br>
+                <p style="font-family: sans-serif;text-align: justify;">Intracortical brain-computer interface (iBCI)
+                  research has demonstrated the ability for peoplewith paralysis to control computers. However, most of
+                  these demonstrations have been limitedto lab settings and there has been a gap in bringing it to the
+                  end-user. The majority of thesestudies have evaluated the system based on its usability. However,
+                  these cover only a part ofuser experience namely the pragmatic qualities, and not its hedonic
+                  qualities. In order to designa system that is user centered, there needs to be an iterative design
+                  process between thedeveloper and the user, which addresses the whole user experience.
                   <br><br>
-                  <p style="font-family: sans-serif;text-align: justify;">Intracortical brain-computer interface (iBCI) research has demonstrated the ability for peoplewith paralysis to control computers. However, most of these demonstrations have been limitedto lab settings and there has been a gap in bringing it to the end-user. The majority of thesestudies have evaluated the system based on its usability. However, these cover only a part ofuser experience namely the pragmatic qualities, and not its hedonic qualities. In order to designa system that is user centered, there needs to be an iterative design process between thedeveloper and the user, which addresses the whole user experience.
-                      <br><br>
-                      I worked on the graphical user interface and development of the interface between differentsoftware modules for controlling a tablet PC through brain computer interface. The goal was totransition from an experiment system, where the developer setup the task for the participant to asystem available to an end user where the participant to can independently setup (maybe withthe help of the user) and use the system at home. When the user was able to use the system, itwas evaluated addressing the whole user experience. The iBCI user experience was thencompared to that of touch screen input by a participant with tetraplegia who retained the use ofhis proximal arm but had impaired hand function. <br>
-                  </p>
-                    <!--<a href="www.nitrr.ac.in" style="color: blue;font-family: sans-serif;">Dummmy</a>-->
+                  I worked on the graphical user interface and development of the interface between differentsoftware
+                  modules for controlling a tablet PC through brain computer interface. The goal was totransition from
+                  an experiment system, where the developer setup the task for the participant to asystem available to
+                  an end user where the participant to can independently setup (maybe withthe help of the user) and use
+                  the system at home. When the user was able to use the system, itwas evaluated addressing the whole
+                  user experience. The iBCI user experience was thencompared to that of touch screen input by a
+                  participant with tetraplegia who retained the use ofhis proximal arm but had impaired hand function.
                   <br>
-                  <div  class="embed-responsive embed-responsive-16by9" style="overflow:auto;">
-                    <video controls="controls">
-                      <source src="img/about/BCI_control.mp4" type="video/mp4">
-                    </video>
+                </p>
+                <!--<a href="www.nitrr.ac.in" style="color: blue;font-family: sans-serif;">Dummmy</a>-->
+                <br>
+                <div class="embed-responsive embed-responsive-16by9" style="overflow:auto;">
+                  <video controls="controls">
+                    <source src="img/about/BCI_control.mp4" type="video/mp4">
+                  </video>
                 </div>
-                  <br><br>
-                  <img class="img-fluid d-block mx-auto" src="img/about/GUI.png" alt="">
-                  <p style="font-family: sans-serif;margin-top: -30px; ">
-                    <i style="font-family: sans-serif;position: relative;">Fig: Graphical User Interface of the system and painting made by the participant using BCIcontrol</i>
-                  </p>
-                  <br><br>
-                  <p style="font-family: sans-serif;text-align: justify;">The participant was able to use a 3 DOF decoder to complete the center-out task and the shape
-                    tracing task. The user experience assessment revealed high effectiveness (accuracy, low error)
-                    and an overall good match between the user and the assistive device which suggests the user
-                    was rather satisfied with the system when assessed using various questionnaire.</p>
-                    <br><br>
-                  <img class="img-fluid d-block mx-auto" src="img/about/shape tracing.png" alt="">
-                  <p style="font-family: sans-serif;margin-top: -30px; ">
-                    <i style="font-family: sans-serif;position: relative;">Fig: Shape tracing accuracy result comparison of BCI control and Stylus control.</i>
-                  </p>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-info btn-sm" data-dismiss="modal">Other Projects</button>
-                </div>
+                <br><br>
+                <img class="img-fluid d-block mx-auto" src="img/about/GUI.png" alt="">
+                <p style="font-family: sans-serif;margin-top: -30px; ">
+                  <i style="font-family: sans-serif;position: relative;">Fig: Graphical User Interface of the system and
+                    painting made by the participant using BCIcontrol</i>
+                </p>
+                <br><br>
+                <p style="font-family: sans-serif;text-align: justify;">The participant was able to use a 3 DOF decoder
+                  to complete the center-out task and the shape
+                  tracing task. The user experience assessment revealed high effectiveness (accuracy, low error)
+                  and an overall good match between the user and the assistive device which suggests the user
+                  was rather satisfied with the system when assessed using various questionnaire.</p>
+                <br><br>
+                <img class="img-fluid d-block mx-auto" src="img/about/shape tracing.png" alt="">
+                <p style="font-family: sans-serif;margin-top: -30px; ">
+                  <i style="font-family: sans-serif;position: relative;">Fig: Shape tracing accuracy result comparison
+                    of BCI control and Stylus control.</i>
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-info btn-sm" data-dismiss="modal">Other Projects</button>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-	  	<!-- project 13 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal13" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-           <!-- <i class="fas fa-times" style="font-size:2em;color:grey"></i> -->
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
-          </div>
-          <div class="container">
-            <div class="row">
-              <p class="text-muted"><b style="font-family: sans-serif;">Date: </b></p>
-              <div class="col-lg-12 mx-auto">
-                <div class="modal-body">
-                  <!-- Project Details Go Here -->
-                  <!-- <h2 class="text-uppercase">Small Mouth</h2> -->
-                  <p class="item-intro text-muted" style="font-size: 25px ;margin-top: -15px;">Portable Intracortical Brain-Computer Interface System</p>
-                  <!-- <p class="item-intro" style="margin-top: -10px;font-size: 20px;font-family: sans-serif; color: black;">
+  <!-- project 13 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal13" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <!-- <i class="fas fa-times" style="font-size:2em;color:grey"></i> -->
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="container">
+          <div class="row">
+            <p class="text-muted"><b style="font-family: sans-serif;">Date: </b></p>
+            <div class="col-lg-12 mx-auto">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <!-- <h2 class="text-uppercase">Small Mouth</h2> -->
+                <p class="item-intro text-muted" style="font-size: 25px ;margin-top: -15px;">Portable Intracortical
+                  Brain-Computer Interface System</p>
+                <!-- <p class="item-intro" style="margin-top: -10px;font-size: 20px;font-family: sans-serif; color: black;">
                     { Biomimetic Robotics, Arduino, Biomechanics}</p> -->
-                  <img class="img-fluid d-block mx-auto" src="img/about/Portable_BCI.jpg" alt="">
-                  <p style="font-family: sans-serif;margin-top: -30px; ">
-                    <i style="font-family: sans-serif;position: relative;">Fig: Participant using Portable iBCI system</i>
-                  </p>
+                <img class="img-fluid d-block mx-auto" src="img/about/Portable_BCI.jpg" alt="">
+                <p style="font-family: sans-serif;margin-top: -30px; ">
+                  <i style="font-family: sans-serif;position: relative;">Fig: Participant using Portable iBCI system</i>
+                </p>
+                <br><br>
+                <p style="font-family: sans-serif;text-align: justify;">Intracortical brain-computer interface (iBCI)
+                  research has demonstrated the ability for peoplewith paralysis to control computers. However, most of
+                  these demonstrations have been limitedto lab settings and there has been a gap in bringing it to the
+                  end-user. The majority of thesestudies have evaluated the system based on its usability. However,
+                  these cover only a part ofuser experience namely the pragmatic qualities, and not its hedonic
+                  qualities. In order to designa system that is user centered, there needs to be an iterative design
+                  process between thedeveloper and the user, which addresses the whole user experience.
                   <br><br>
-                  <p style="font-family: sans-serif;text-align: justify;">Intracortical brain-computer interface (iBCI) research has demonstrated the ability for peoplewith paralysis to control computers. However, most of these demonstrations have been limitedto lab settings and there has been a gap in bringing it to the end-user. The majority of thesestudies have evaluated the system based on its usability. However, these cover only a part ofuser experience namely the pragmatic qualities, and not its hedonic qualities. In order to designa system that is user centered, there needs to be an iterative design process between thedeveloper and the user, which addresses the whole user experience.
-                      <br><br>
-                      I worked on the graphical user interface and development of the interface between differentsoftware modules for controlling a tablet PC through brain computer interface. The goal was totransition from an experiment system, where the developer setup the task for the participant to asystem available to an end user where the participant to can independently setup (maybe withthe help of the user) and use the system at home. When the user was able to use the system, itwas evaluated addressing the whole user experience. The iBCI user experience was thencompared to that of touch screen input by a participant with tetraplegia who retained the use ofhis proximal arm but had impaired hand function. <br>
-                  </p>
-                    <!--<a href="www.nitrr.ac.in" style="color: blue;font-family: sans-serif;">Dummmy</a>-->
+                  I worked on the graphical user interface and development of the interface between differentsoftware
+                  modules for controlling a tablet PC through brain computer interface. The goal was totransition from
+                  an experiment system, where the developer setup the task for the participant to asystem available to
+                  an end user where the participant to can independently setup (maybe withthe help of the user) and use
+                  the system at home. When the user was able to use the system, itwas evaluated addressing the whole
+                  user experience. The iBCI user experience was thencompared to that of touch screen input by a
+                  participant with tetraplegia who retained the use ofhis proximal arm but had impaired hand function.
                   <br>
-                  <div  class="embed-responsive embed-responsive-16by9" style="overflow:auto;">
-                    <video controls="controls">
-                      <source src="img/about/BCI_control.mp4" type="video/mp4">
-                    </video>
+                </p>
+                <!--<a href="www.nitrr.ac.in" style="color: blue;font-family: sans-serif;">Dummmy</a>-->
+                <br>
+                <div class="embed-responsive embed-responsive-16by9" style="overflow:auto;">
+                  <video controls="controls">
+                    <source src="img/about/BCI_control.mp4" type="video/mp4">
+                  </video>
                 </div>
-                  <br><br>
-                  <img class="img-fluid d-block mx-auto" src="img/about/GUI.png" alt="">
-                  <p style="font-family: sans-serif;margin-top: -30px; ">
-                    <i style="font-family: sans-serif;position: relative;">Fig: Graphical User Interface of the system and painting made by the participant using BCIcontrol</i>
-                  </p>
-                  <br><br>
-                  <p style="font-family: sans-serif;text-align: justify;">The participant was able to use a 3 DOF decoder to complete the center-out task and the shape
-                    tracing task. The user experience assessment revealed high effectiveness (accuracy, low error)
-                    and an overall good match between the user and the assistive device which suggests the user
-                    was rather satisfied with the system when assessed using various questionnaire.</p>
-                    <br><br>
-                  <img class="img-fluid d-block mx-auto" src="img/about/shape tracing.png" alt="">
-                  <p style="font-family: sans-serif;margin-top: -30px; ">
-                    <i style="font-family: sans-serif;position: relative;">Fig: Shape tracing accuracy result comparison of BCI control and Stylus control.</i>
-                  </p>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-info btn-sm" data-dismiss="modal">Other Projects</button>
-                </div>
+                <br><br>
+                <img class="img-fluid d-block mx-auto" src="img/about/GUI.png" alt="">
+                <p style="font-family: sans-serif;margin-top: -30px; ">
+                  <i style="font-family: sans-serif;position: relative;">Fig: Graphical User Interface of the system and
+                    painting made by the participant using BCIcontrol</i>
+                </p>
+                <br><br>
+                <p style="font-family: sans-serif;text-align: justify;">The participant was able to use a 3 DOF decoder
+                  to complete the center-out task and the shape
+                  tracing task. The user experience assessment revealed high effectiveness (accuracy, low error)
+                  and an overall good match between the user and the assistive device which suggests the user
+                  was rather satisfied with the system when assessed using various questionnaire.</p>
+                <br><br>
+                <img class="img-fluid d-block mx-auto" src="img/about/shape tracing.png" alt="">
+                <p style="font-family: sans-serif;margin-top: -30px; ">
+                  <i style="font-family: sans-serif;position: relative;">Fig: Shape tracing accuracy result comparison
+                    of BCI control and Stylus control.</i>
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-info btn-sm" data-dismiss="modal">Other Projects</button>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- Modal 1 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-           <!-- <i class="fas fa-times" style="font-size:2em;color:grey"></i> -->
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
-          </div>
-          <div class="container">
-            <div class="row">
-              <p class="text-muted"><b style="font-family: sans-serif;">Date: December 2018</b></p>
-              <div class="col-lg-12 mx-auto">
-                <div class="modal-body">
-                  <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">Tadashi</h2>
-                  <p class="item-intro text-muted" style="font-size: 25px ;margin-top: -15px;">Personal Healthcare Companion.</p>
-                  <p class="item-intro" style="margin-top: -10px;font-size: 20px;font-family: sans-serif; color: black;">{Computer Vision, Deep Learning}</p>
-                  <img class="img-fluid d-block mx-auto" src="img/about/first_full.JPG" alt="">
+  <!-- Modal 1 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <!-- <i class="fas fa-times" style="font-size:2em;color:grey"></i> -->
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="container">
+          <div class="row">
+            <p class="text-muted"><b style="font-family: sans-serif;">Date: December 2018</b></p>
+            <div class="col-lg-12 mx-auto">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <h2 class="text-uppercase">Tadashi</h2>
+                <p class="item-intro text-muted" style="font-size: 25px ;margin-top: -15px;">Personal Healthcare
+                  Companion.</p>
+                <p class="item-intro" style="margin-top: -10px;font-size: 20px;font-family: sans-serif; color: black;">
+                  {Computer Vision, Deep Learning}</p>
+                <img class="img-fluid d-block mx-auto" src="img/about/first_full.JPG" alt="">
+                <br>
+                <br>
+                <p style="font-family: sans-serif;text-align: justify;">Tadashi was chosen to be one of the Top 20
+                  Healthcare solutions in GE Healthcare Precision Challenge 2018.
+                  <br>
+                  Tadashi is a Personal Healthcare Companion which identifies and monitors the food intake of the user
+                  and gives a feedback on his food lifestyle. This feedback includes immediate and weekly feedback which
+                  help in decision making, self-realization and provides the user with an additional motivation to
+                  continue with a healthy lifestyle. This is done by immediate audio feedback, tracking food intake
+                  automatically and using a gamification approach by maintaining a leaderboard which is affected by
+                  healthy and unhealthy food habits.
                   <br>
                   <br>
-                  <p style="font-family: sans-serif;text-align: justify;">Tadashi was chosen to be one of the Top 20 Healthcare solutions in GE Healthcare Precision Challenge 2018.
-                    <br>
-                    Tadashi is a Personal Healthcare Companion which identifies and monitors the food intake of the user and gives a feedback on his food lifestyle. This feedback includes immediate and weekly feedback which help in decision making, self-realization and provides the user with an additional motivation to continue with a healthy lifestyle. This is done by immediate audio feedback, tracking food intake automatically and using a gamification approach by maintaining a leaderboard which is affected by healthy and unhealthy food habits.
-                  <br>
-                  <br>
-              In this way, Tadashi help the user by helping with immediate decision making to switch to avoid unhealthy diet, helps the user with tracking their food habits and also motivates the user to follow the streak of sticking to a healthy diet.
-              <!-- copy from here for captions -->
-                  </p>
-<!--                   <a href="www.nitrr.ac.in" style="color: blue;font-family: sans-serif;">Dummmy</a>
- -->                  <br>
- <br>
-                  <img class="img-fluid d-block mx-auto" src="img/about/glass.png" alt="">
-                  <p style="font-family: sans-serif;margin-top: -30px; ">
-             <i style="font-family: sans-serif;position: relative;">Fig: Smart glass as the chosen form factor with camera and bone conduction audio feedback</i>
-                  </p>
-                  <br>
-                  <br>
-                  <img class="img-fluid d-block mx-auto" src="img/about/pizza.jpg" alt="">
-                  <p style="font-family: sans-serif;margin-top: -30px; ">
-             <i style="font-family: sans-serif;position: relative;">Fig: Tadashi detecting pizza</i>
-                  </p>
-                  <!-- <br>
+                  In this way, Tadashi help the user by helping with immediate decision making to switch to avoid
+                  unhealthy diet, helps the user with tracking their food habits and also motivates the user to follow
+                  the streak of sticking to a healthy diet.
+                  <!-- copy from here for captions -->
+                </p>
+                <!--                   <a href="www.nitrr.ac.in" style="color: blue;font-family: sans-serif;">Dummmy</a>
+ --> <br>
+                <br>
+                <img class="img-fluid d-block mx-auto" src="img/about/glass.png" alt="">
+                <p style="font-family: sans-serif;margin-top: -30px; ">
+                  <i style="font-family: sans-serif;position: relative;">Fig: Smart glass as the chosen form factor with
+                    camera and bone conduction audio feedback</i>
+                </p>
+                <br>
+                <br>
+                <img class="img-fluid d-block mx-auto" src="img/about/pizza.jpg" alt="">
+                <p style="font-family: sans-serif;margin-top: -30px; ">
+                  <i style="font-family: sans-serif;position: relative;">Fig: Tadashi detecting pizza</i>
+                </p>
+                <!-- <br>
                   <br> -->
-                  <!-- copy till here for captions -->
-                  <!-- <ul class="list-inline"> -->
-                    <!-- <li><b style="font-family: sans-serif;">Date: December 2018</b></li> -->
-                    <!-- <li style="font-family: sans-serif;">Client: Threads</li>
+                <!-- copy till here for captions -->
+                <!-- <ul class="list-inline"> -->
+                <!-- <li><b style="font-family: sans-serif;">Date: December 2018</b></li> -->
+                <!-- <li style="font-family: sans-serif;">Client: Threads</li>
                     <li style="font-family: sans-serif;">Category: Illustration</li> -->
-                  <!-- </ul> -->
+                <!-- </ul> -->
 
-                  <!-- <button class="btn btn-info" data-dismiss="modal" type="button">
+                <!-- <button class="btn btn-info" data-dismiss="modal" type="button">
                     <i class="fas fa-times"></i>
                     Other Projects</button> -->
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-info btn-sm" data-dismiss="modal">Other Projects</button>
-                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-info btn-sm" data-dismiss="modal">Other Projects</button>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- Modal 2 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
-          </div>
-          <div class="container">
-            <div class="row">
-              <p class="text-muted"><b style="font-family: sans-serif;">Date: August 2018- December 2018</b></p>
-              <div class="col-lg-12 mx-auto">
-                <div class="modal-body">
-                  <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">Sparsh</h2>
-                  <p class="item-intro text-muted" style="font-size: 25px ;margin-top: -15px;">Restoring Tactile Sensation In Upper Limb Amputees.</p>
-                  <p class="item-intro" style="margin-top: -10px;font-size: 20px;font-family: sans-serif; color: black;">{Neural Interface, Peripheral Nerve Stimulation}</p>
-                  <img class="img-fluid d-block mx-auto" src="img/about/sparsh_thumnail.JPG" alt="">
-                  <p style="font-family: sans-serif;text-align: justify;">The artificial limbs can play an essential role in the rehabilitation of amputees. The existing state-of-the-art prosthesis is able to aid an amputee’s ability to regain lost function but lacks the ability to advance the tactile sensation to the human brain.Tactile sensing provides valuable insight into the environment in which we interact with. For upper limb prosthetic users, the absence of sensory feedback impedes efficient use of the prosthesis. In our work, we studied the use of noninvasive, targeted Transcutaneous Electrical Nerve Stimulation(TENS) to provide sensory feedback to the upper limb amputees. We were able to classify sensation in different surface areas of the palm where effective nerve stimulation was possible. We also developed a closed-loop system to automatically provide an electrical stimulation to the nerves whenever the prosthetic limb records a touch. We discovered that all the subjects were able to differentiate between the different areas of palm when different peripheral nerves were stimulated. We also exlored different stimulation parameters and found that a higher stimulation frequency provided a more natural sensation when provided a frequency of upto 500Hz whose amplitude was modulated at a lower frequency of 10Hz max due to  hardware constraints. This system aims to help improve prosthetic technology so that one day amputees will feel as if their device is a natural extension of their body.
-</p>
-                  <p style="font-family: sans-serif;">
-              
-              <!-- copy from here for captions -->
-                  </p>
-<!--                   <a href="www.nitrr.ac.in" style="color: blue;font-family: sans-serif;">Dummmy</a>
- -->                  <br>
- <br>
-                  <img class="img-fluid d-block mx-auto" src="img/about/sparsh1.JPG" alt="">
-                  <p style="font-family: sans-serif;margin-top: -30px; ">
-             <i style="font-family: sans-serif;position: relative;">Fig: Testing on subject-6 </i>
-                  </p>
+  <!-- Modal 2 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="container">
+          <div class="row">
+            <p class="text-muted"><b style="font-family: sans-serif;">Date: August 2018- December 2018</b></p>
+            <div class="col-lg-12 mx-auto">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <h2 class="text-uppercase">Sparsh</h2>
+                <p class="item-intro text-muted" style="font-size: 25px ;margin-top: -15px;">Restoring Tactile Sensation
+                  In Upper Limb Amputees.</p>
+                <p class="item-intro" style="margin-top: -10px;font-size: 20px;font-family: sans-serif; color: black;">
+                  {Neural Interface, Peripheral Nerve Stimulation}</p>
+                <img class="img-fluid d-block mx-auto" src="img/about/sparsh_thumnail.JPG" alt="">
+                <p style="font-family: sans-serif;text-align: justify;">The artificial limbs can play an essential role
+                  in the rehabilitation of amputees. The existing state-of-the-art prosthesis is able to aid an
+                  amputee’s ability to regain lost function but lacks the ability to advance the tactile sensation to
+                  the human brain.Tactile sensing provides valuable insight into the environment in which we interact
+                  with. For upper limb prosthetic users, the absence of sensory feedback impedes efficient use of the
+                  prosthesis. In our work, we studied the use of noninvasive, targeted Transcutaneous Electrical Nerve
+                  Stimulation(TENS) to provide sensory feedback to the upper limb amputees. We were able to classify
+                  sensation in different surface areas of the palm where effective nerve stimulation was possible. We
+                  also developed a closed-loop system to automatically provide an electrical stimulation to the nerves
+                  whenever the prosthetic limb records a touch. We discovered that all the subjects were able to
+                  differentiate between the different areas of palm when different peripheral nerves were stimulated. We
+                  also exlored different stimulation parameters and found that a higher stimulation frequency provided a
+                  more natural sensation when provided a frequency of upto 500Hz whose amplitude was modulated at a
+                  lower frequency of 10Hz max due to hardware constraints. This system aims to help improve prosthetic
+                  technology so that one day amputees will feel as if their device is a natural extension of their body.
+                </p>
+                <p style="font-family: sans-serif;">
+
+                  <!-- copy from here for captions -->
+                </p>
+                <!--                   <a href="www.nitrr.ac.in" style="color: blue;font-family: sans-serif;">Dummmy</a>
+ --> <br>
+                <br>
+                <img class="img-fluid d-block mx-auto" src="img/about/sparsh1.JPG" alt="">
+                <p style="font-family: sans-serif;margin-top: -30px; ">
+                  <i style="font-family: sans-serif;position: relative;">Fig: Testing on subject-6 </i>
+                </p>
+                <br>
+                <br>
+                <img class="img-fluid d-block mx-auto test" src="img/about/sparsh2.JPG" alt="">
+                <p style="font-family: sans-serif;margin-top: -30px; ">
+                  <i style="font-family: sans-serif;position: relative;">Fig: Electrode Placement (Median and Ulnar
+                    Nerve)</i>
                   <br>
                   <br>
-                  <img class="img-fluid d-block mx-auto test" src="img/about/sparsh2.JPG" alt="">
-                  <p style="font-family: sans-serif;margin-top: -30px; ">
-             <i style="font-family: sans-serif;position: relative;">Fig: Electrode Placement (Median and Ulnar Nerve)</i>
-             <br>
-             <br>
-                  </p>
-                  <!-- copy till here for captions -->
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-info btn-sm" data-dismiss="modal">Other Projects</button>
-                </div>
+                </p>
+                <!-- copy till here for captions -->
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-info btn-sm" data-dismiss="modal">Other Projects</button>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- Modal 3 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
-          </div>
-          <div class="container">
-            <div class="row">
-              <p class="text-muted"><b style="font-family: sans-serif;">Date: October 2018- December 2018</b></p>
-              <div class="col-lg-12 mx-auto">
-                <div class="modal-body">
-                  <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">Botanical Touch</h2>
-                   <p class="item-intro text-muted" style="font-size: 25px ;margin-top: -15px;">Plant-Human Interface</p>
-                  <p class="item-intro" style="margin-top: -10px;font-size: 20px;font-family: sans-serif; color: black;">{ Plant-Sensors, RaspberryPi, Peripheral Nerve Stimulation }</p>
-                  <img class="img-fluid d-block mx-auto" src="img/about/botanical.jpeg" alt="">
-                  <p style="font-family: sans-serif;text-align: justify;">
-                    Botanical Touch was developed to explore transhumanism to expand the horizons beyond our five senses. The system allows us to perceive a different sense of touch- from a plant, helping us in developing a deeper connection to the plants and in turn, with nature.
-                    <br><br>
-                    The Plant act as a natural sensor which generates an impluse on being touched. This impluse is amplified and transmitted to the microcontroller which drives the TENS machine enabling the user to be able to feel tactile sensation by peripheral nerve stimulation when the plant is being touched. I believe this would help us bring closer to nature and thus work towards protecting it. 
+  <!-- Modal 3 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="container">
+          <div class="row">
+            <p class="text-muted"><b style="font-family: sans-serif;">Date: October 2018- December 2018</b></p>
+            <div class="col-lg-12 mx-auto">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <h2 class="text-uppercase">Botanical Touch</h2>
+                <p class="item-intro text-muted" style="font-size: 25px ;margin-top: -15px;">Plant-Human Interface</p>
+                <p class="item-intro" style="margin-top: -10px;font-size: 20px;font-family: sans-serif; color: black;">{
+                  Plant-Sensors, RaspberryPi, Peripheral Nerve Stimulation }</p>
+                <img class="img-fluid d-block mx-auto" src="img/about/botanical.jpeg" alt="">
+                <p style="font-family: sans-serif;text-align: justify;">
+                  Botanical Touch was developed to explore transhumanism to expand the horizons beyond our five senses.
+                  The system allows us to perceive a different sense of touch- from a plant, helping us in developing a
+                  deeper connection to the plants and in turn, with nature.
+                  <br><br>
+                  The Plant act as a natural sensor which generates an impluse on being touched. This impluse is
+                  amplified and transmitted to the microcontroller which drives the TENS machine enabling the user to be
+                  able to feel tactile sensation by peripheral nerve stimulation when the plant is being touched. I
+                  believe this would help us bring closer to nature and thus work towards protecting it.
 
-                  </p>
-                  <p style="font-family: sans-serif;">
-              
-              <!-- copy from here for captions -->
-                  </p>
-                  <!-- <a href="www.nitrr.ac.in" style="color: blue;font-family: sans-serif;">Dummmy</a> -->
-                  <br>
-                  <br>
-                  <!-- <img class="img-fluid d-block mx-auto" src="img/about/sparsh1.jpg" alt="">
+                </p>
+                <p style="font-family: sans-serif;">
+
+                  <!-- copy from here for captions -->
+                </p>
+                <!-- <a href="www.nitrr.ac.in" style="color: blue;font-family: sans-serif;">Dummmy</a> -->
+                <br>
+                <br>
+                <!-- <img class="img-fluid d-block mx-auto" src="img/about/sparsh1.jpg" alt="">
                   <p style="font-family: sans-serif;margin-top: -30px; ">
              <i> <b style="font-family: sans-serif;position: relative;">In this way</b></i>
                   </p>
@@ -825,9 +927,149 @@
                   <p style="font-family: sans-serif;margin-top: -30px; ">
              <i> <b style="font-family: sans-serif;position: relative;">In this way</b></i>
                   </p> -->
-                  <!-- copy till here for captions -->
-                 
+                <!-- copy till here for captions -->
+
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-info btn-sm" data-dismiss="modal">Other Projects</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 4 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="container">
+          <div class="row">
+            <p class="text-muted"><b style="font-family: sans-serif;">Date: May 2018- July 2018 <br>
+                (MIT Media Lab)</b></p>
+            <div class="col-lg-12 mx-auto">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <h2 class="text-uppercase">Dormio</h2>
+                <p class="item-intro text-muted" style="font-size: 25px ;margin-top: -15px;">Interfacing with Dreams to
+                  Augment Human Creativity</p>
+                <p class="item-intro" style="margin-top: -10px;font-size: 20px;font-family: sans-serif; color: black;">{
+                  Signal Processing, Machine Learning , Python }</p>
+                <img class="img-fluid d-block mx-auto" src="img/about/dormio.jpeg" alt="">
+                <p style="font-family: sans-serif;text-align: justify;">This system allows for access to semi-lucid
+                  sleep state-Hypnagogia, that can successfully influence, extract information from, and leverage
+                  cognition happening during the early stages of sleep in order to augment human creativity. Famous
+                  personalities like Edison and Tesla used a steel ball which napping to access this sleep state. Dormio
+                  uses sensors that detect Heart Rate Variability, Electrodermal Activity and Muscle Tone to identify
+                  this stage and sending these signal in real-time to the computer device.
+                  <br><br>
+                  This creates an opportunity to automate the process of influencing and extend early stage dreaming
+                  state called Hypnagogia. Thus my work was to detect this sleep state. I used Machine Learning and
+                  Signal Processing which could classify the Hypnagogic sleep with Non-Hypnagogic sleep.
+                </p>
+                <p style="font-family: sans-serif;">
+
+                  <!-- copy from here for captions -->
+                </p>
+                <!--                   <a href="www.nitrr.ac.in" style="color: blue;font-family: sans-serif;">Dummmy</a>
+ --> <br>
+                <div class="embed-responsive embed-responsive-16by9" id="plotchart" style="overflow:auto;">
+                  <iframe src="https://www.youtube.com/embed/joYEbU2R57Q" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
                 </div>
+                <img class="img-fluid d-block mx-auto" src="img/about/dormio_1.jpeg" alt="">
+                <p style="font-family: sans-serif;margin-top: -30px; ">
+                  <i style="font-family: sans-serif;position: relative;">Fig: Flex Sensor Signal of Awake and Asleep
+                    Subject </i>
+                </p>
+                <img class="img-fluid d-block mx-auto" src="img/about/dormio_2.jpeg" alt="">
+                <p style="font-family: sans-serif;margin-top: -30px; ">
+                  <i style="font-family: sans-serif;position: relative;">Fig: EDA Signal of Awake and Asleep Subject</i>
+                </p>
+                <img class="img-fluid d-block mx-auto" src="img/about/dormio_3.jpeg" alt="">
+                <p style="font-family: sans-serif;margin-top: -30px; ">
+                  <i style="font-family: sans-serif;position: relative;font-weight: normal;">Fig: BPM plot of Awake and
+                    Asleep Subject</i>
+                  <br>
+                  <br>
+                </p>
+                <!-- copy till here for captions -->
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-info btn-sm" data-dismiss="modal">Other Projects</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 5 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="container">
+          <div class="row">
+            <p class="text-muted"><b style="font-family: sans-serif;">Date: August 2017 - October 2017</b></p>
+            <div class="col-lg-12 mx-auto">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <h2 class="text-uppercase">BrainSense</h2>
+                <p class="item-intro text-muted" style="font-size: 25px ;margin-top: -15px;">Mind-Controlled Robot</p>
+                <p class="item-intro" style="margin-top: -10px;font-size: 20px;font-family: sans-serif; color: black;">{
+                  Brain-Computer Interface, Signal Processing, Arduino, LabView }</p>
+                <img class="img-fluid d-block mx-auto" src="img/about/brainsense_1.jpeg" alt="">
+                <p style="font-family: sans-serif;text-align: justify;">
+
+                  The field of brain-computer interface is a driving force for utilizing electroencephalography
+                  technology, which is the process of recording brain activity from the scalp using electrodes. Its main
+                  focus has been about developing applications in a medical context, helping paralyzed or disabled
+                  patients to interact with the external world. In this regard, A prototype of a brain-controlled robot
+                  was prepared which was controlled by the eye blinking artifact in the EEG signals, in real time.
+                  <br><br>
+
+                  BrainSense acts as an inception for developing a vehicle, or wheelchair allowing patients with motor
+                  disability to control it using their minds through Brain-Computer Interfaces. We designed and
+                  developed a Two-Channel EEG acquisition system and the electrodes were placed on the prefrontal
+                  cortex. Signal Processing was performed to reduce noise and unwanted features first by hardfare
+                  filters and secondly using the NI-Labview Software. A mechanism to ignore the involuntary eye blinking
+                  was considered to give user a better control over the system. The
+                  While working on the project we faced a problem, the system was responding to the unwanted involuntary
+                  eye-blink of the user. As a solution, an algorithm was developed in order to ignore the single
+                  involuntary eye blink which always occurs simultaneously in both eyes and a different parameter was
+                  set, in order to start the motor.
+                  The model won the first price in “The National Science Exhibition-2017”
+
+                </p>
+                <p style="font-family: sans-serif;">
+
+                  <!-- copy from here for captions -->
+                </p>
+                <!--  <a href="www.nitrr.ac.in" style="color: blue;font-family: sans-serif;">Dummmy</a> -->
+                <br>
+                <img class="img-fluid d-block mx-auto" src="img/about/brainsense_2.JPG" alt="">
+                <p style="font-family: sans-serif;margin-top: -30px; ">
+                  <i style="font-family: sans-serif;position: relative;font-weight: normal;">Fig: System Setup</i>
+                </p>
+                <br>
+                <br>
+                <img class="img-fluid d-block mx-auto" src="img/about/brainsense_3.JPG" alt="">
+                <p style="font-family: sans-serif;margin-top: -30px; ">
+                  <i style="font-family: sans-serif;position: relative;">Fig: Pre-Amplifier Circuit</i>
+                  <br>
+                  <br>
+                </p>
+                <!-- copy till here for captions -->
+
                 <div class="modal-footer">
                   <button type="button" class="btn btn-info btn-sm" data-dismiss="modal">Other Projects</button>
                 </div>
@@ -837,153 +1079,52 @@
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- Modal 4 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
-          </div>
-          <div class="container">
-            <div class="row">
-              <p class="text-muted"><b style="font-family: sans-serif;">Date: May 2018- July 2018 <br>
-		      (MIT Media Lab)</b></p>
-              <div class="col-lg-12 mx-auto">
-                <div class="modal-body">
-                  <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">Dormio</h2>
-                  <p class="item-intro text-muted" style="font-size: 25px ;margin-top: -15px;">Interfacing with Dreams to Augment Human Creativity</p>
-                  <p class="item-intro" style="margin-top: -10px;font-size: 20px;font-family: sans-serif; color: black;">{ Signal Processing, Machine Learning , Python }</p>
-                  <img class="img-fluid d-block mx-auto" src="img/about/dormio.jpeg" alt="">
-                  <p style="font-family: sans-serif;text-align: justify;">This system allows for access to semi-lucid sleep state-Hypnagogia, that can successfully influence, extract information from, and leverage cognition happening during the early stages of sleep in order to augment human creativity. Famous personalities like Edison and Tesla used a steel ball which napping to access this sleep state.  Dormio uses sensors that detect Heart Rate Variability, Electrodermal Activity and Muscle Tone to identify this stage and sending these signal in real-time to the computer device.
-                    <br><br>
-                    This creates an opportunity to automate the process of influencing and extend early stage dreaming state called Hypnagogia. Thus my work was to detect this sleep state. I used Machine Learning and Signal Processing which could classify the Hypnagogic sleep with Non-Hypnagogic sleep.
-                  </p>
-                  <p style="font-family: sans-serif;">
-              
-              <!-- copy from here for captions -->
-                  </p>
-<!--                   <a href="www.nitrr.ac.in" style="color: blue;font-family: sans-serif;">Dummmy</a>
- -->                  <br>
-                      <div  class="embed-responsive embed-responsive-16by9"  id="plotchart" style="overflow:auto;">
-                        <iframe src="https://www.youtube.com/embed/joYEbU2R57Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                                 
-                      </div>
-                  <img class="img-fluid d-block mx-auto" src="img/about/dormio_1.jpeg" alt="">
-                  <p style="font-family: sans-serif;margin-top: -30px; ">
-             <i style="font-family: sans-serif;position: relative;">Fig: Flex Sensor Signal of Awake and Asleep Subject </i>
-                  </p>
-                  <img class="img-fluid d-block mx-auto" src="img/about/dormio_2.jpeg" alt="">
-                  <p style="font-family: sans-serif;margin-top: -30px; ">
-             <i style="font-family: sans-serif;position: relative;">Fig: EDA Signal of Awake and Asleep Subject</i>
-                  </p>
-                  <img class="img-fluid d-block mx-auto" src="img/about/dormio_3.jpeg" alt="">
-                  <p style="font-family: sans-serif;margin-top: -30px; ">
-             <i style="font-family: sans-serif;position: relative;font-weight: normal;">Fig: BPM plot of Awake and Asleep Subject</i>
-             <br>
-             <br>
-                  </p>
-                  <!-- copy till here for captions -->
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-info btn-sm" data-dismiss="modal">Other Projects</button>
-                </div>
-              </div>
-            </div>
-          </div>
+  <!-- Modal 6 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
         </div>
-      </div>
-    </div>
+        <div class="container">
+          <div class="row">
+            <p class="text-muted"><b style="font-family: sans-serif;">Date: May 2017 - June 2017<br>
+                (AIIMS Raipur)</b></p>
+            <div class="col-lg-12 mx-auto">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <h2 class="text-uppercase">Engineering Sleep</h2>
+                <p class="item-intro text-muted" style="font-size: 25px ;margin-top: -15px;">Sleep Monitoring and
+                  Manipulation System</p>
+                <p class="item-intro" style="margin-top: -10px;font-size: 20px;font-family: sans-serif; color: black;">{
+                  EEG Signal Processing, Auditory Stimulation}</p>
+                <img class="img-fluid d-block mx-auto" src="img/about/sleep.JPG" alt="">
+                <p style="font-family: sans-serif;text-align: justify;">
+                  High quality sleep is essential for a human being to recover from tiredness and to maintain good
+                  health. Sleep deprivation due to sleep-related disorders such as hypertension, atherosclerosis and
+                  coronary artery disease may introduce severe physical effects, e.g. cognitive impairments and mental
+                  health complications. Many previous pieces of research have found that playing sounds synchronized to
+                  the rhythm of the slow brain oscillations while sleep enhances these oscillations, thus improving the
+                  quality of sleep and boosts their memory
+                  Engineering Sleep is a system for measuring cerebral activity to recognize deep sleep by detection of
+                  delta waves and stimulate synchronized auditory signals to enhance the quality of sleep and improve
+                  memory.
+                  The system could also track EEG,ECG and respiration rate and thus could also be used to detect sleep
+                  apnea and track insomnia.
+                  <br><br>
+                  This was my first effort, in designing a closed loop human-machine interaction for expanding human
+                  cognitive abilities and now wanted to work on the individual aspect of HCI
 
-    <!-- Modal 5 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
-          </div>
-          <div class="container">
-            <div class="row">
-              <p class="text-muted"><b style="font-family: sans-serif;">Date: August 2017 - October 2017</b></p>
-              <div class="col-lg-12 mx-auto">
-                <div class="modal-body">
-                  <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">BrainSense</h2>
-                  <p class="item-intro text-muted" style="font-size: 25px ;margin-top: -15px;">Mind-Controlled Robot</p>
-                  <p class="item-intro" style="margin-top: -10px;font-size: 20px;font-family: sans-serif; color: black;">{ Brain-Computer Interface, Signal Processing, Arduino, LabView  }</p>
-                  <img class="img-fluid d-block mx-auto" src="img/about/brainsense_1.jpeg" alt="">
-                  <p style="font-family: sans-serif;text-align: justify;">
-                    
-The field of brain-computer interface is a driving force for utilizing electroencephalography technology, which is the process of recording brain activity from the scalp using electrodes. Its main focus has been about developing applications in a medical context, helping paralyzed or disabled patients to interact with the external world. In this regard, A prototype of a brain-controlled robot was prepared which was controlled by the eye blinking artifact in the EEG signals, in real time. <br><br>
+                </p>
+                <p style="font-family: sans-serif;">
 
-BrainSense acts as an inception for developing a vehicle, or wheelchair allowing patients with motor disability to control it using their minds through Brain-Computer Interfaces. We designed and developed a Two-Channel EEG acquisition system and the electrodes were placed on the prefrontal cortex. Signal Processing was performed to reduce noise and unwanted features first by hardfare filters and secondly using the NI-Labview Software. A mechanism to ignore the involuntary eye blinking was considered to give user a better control over the system. The 
-While working on the project we faced a problem, the system was responding to the unwanted involuntary eye-blink of the user. As a solution, an algorithm was developed in order to ignore the single involuntary eye blink which always occurs simultaneously in both eyes and a different parameter was set, in order to start the motor.
-The model won the first price in “The National Science Exhibition-2017”
-
-                  </p>
-                  <p style="font-family: sans-serif;">
-              
-              <!-- copy from here for captions -->
-                  </p>
-                 <!--  <a href="www.nitrr.ac.in" style="color: blue;font-family: sans-serif;">Dummmy</a> -->
-                  <br>
-                  <img class="img-fluid d-block mx-auto" src="img/about/brainsense_2.JPG" alt="">
-                  <p style="font-family: sans-serif;margin-top: -30px; ">
-             <i style="font-family: sans-serif;position: relative;font-weight: normal;">Fig: System Setup</i>
-                  </p>
-                  <br>
-                  <br>
-                  <img class="img-fluid d-block mx-auto" src="img/about/brainsense_3.JPG" alt="">
-                  <p style="font-family: sans-serif;margin-top: -30px; ">
-             <i style="font-family: sans-serif;position: relative;">Fig: Pre-Amplifier Circuit</i>
-             <br>
-             <br>
-                  </p>
-                  <!-- copy till here for captions -->
-                  
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-info btn-sm" data-dismiss="modal">Other Projects</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div></div>
-
-    <!-- Modal 6 -->
-     <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
-          </div>
-          <div class="container">
-            <div class="row">
-              <p class="text-muted"><b style="font-family: sans-serif;">Date: May 2017 - June 2017<br>
-			(AIIMS Raipur)</b></p>
-              <div class="col-lg-12 mx-auto">
-                <div class="modal-body">
-                  <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">Engineering Sleep</h2>
-                  <p class="item-intro text-muted" style="font-size: 25px ;margin-top: -15px;">Sleep Monitoring and Manipulation System</p>
-                  <p class="item-intro" style="margin-top: -10px;font-size: 20px;font-family: sans-serif; color: black;">{ EEG Signal Processing, Auditory Stimulation}</p>
-                  <img class="img-fluid d-block mx-auto" src="img/about/sleep.JPG" alt="">
-                  <p style="font-family: sans-serif;text-align: justify;">
-                  High quality sleep is essential for a human being to recover from tiredness and to maintain good health. Sleep deprivation due to sleep-related disorders such as hypertension, atherosclerosis and coronary artery disease may introduce severe physical effects, e.g. cognitive impairments and mental health complications. Many previous pieces of research have found that playing sounds synchronized to the rhythm of the slow brain oscillations while sleep enhances these oscillations, thus improving the quality of sleep and boosts their memory
-Engineering Sleep is a system for measuring cerebral activity to recognize deep sleep by detection of delta waves and stimulate synchronized auditory signals to enhance the quality of sleep and improve memory. 
-The system could also track EEG,ECG and respiration rate and thus could also be used to detect sleep apnea and track insomnia.
-    <br><br>
- This was my first effort, in designing a closed loop human-machine interaction for expanding human cognitive abilities and now wanted to work on the individual aspect of HCI
-
-                  </p>
-                  <p style="font-family: sans-serif;">
-              
-              <!-- copy from here for captions -->
-                  </p>
-                  <!-- <a href="www.nitrr.ac.in" style="color: blue;font-family: sans-serif;">Dummmy</a> -->
-                  <br>
-                  <!-- <img class="img-fluid d-block mx-auto" src="img/about/sparsh1.jpg" alt="">
+                  <!-- copy from here for captions -->
+                </p>
+                <!-- <a href="www.nitrr.ac.in" style="color: blue;font-family: sans-serif;">Dummmy</a> -->
+                <br>
+                <!-- <img class="img-fluid d-block mx-auto" src="img/about/sparsh1.jpg" alt="">
                   <p style="font-family: sans-serif;margin-top: -30px; ">
              <i> <b style="font-family: sans-serif;position: relative;">In this way</b></i>
                   </p>
@@ -991,287 +1132,348 @@ The system could also track EEG,ECG and respiration rate and thus could also be 
                   <p style="font-family: sans-serif;margin-top: -30px; ">
              <i> <b style="font-family: sans-serif;position: relative;">In this way</b></i>
                   </p> -->
-                  <!-- copy till here for captions -->
-                  
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-info btn-sm" data-dismiss="modal">Other Projects</button>
-                </div>
+                <!-- copy till here for captions -->
+
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-info btn-sm" data-dismiss="modal">Other Projects</button>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
+  <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="container">
+          <div class="row">
+            <p class="text-muted"><b style="font-family: sans-serif;">Date: August 2018</b></p>
+            <div class="col-lg-12 mx-auto">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <h2 class="text-uppercase">Mandrake-The Shouting Plant</h2>
+                <p class="item-intro text-muted" style="font-size: 25px ;margin-top: -15px;font-weight: normal;">
+                  Plant-Computer Interface</p>
+                <p class="item-intro"
+                  style="margin-top: -10px;font-weight: normal;font-size: 20px;font-family: sans-serif; color: black;">{
+                  Plant-Sensor, RaspberryPi}</p>
+                <img class="img-fluid d-block mx-auto" src="img/about/plant.JPG" alt="">
+                <br>
 
+                <p style="font-family: sans-serif;text-align: justify;">
+                  This was a fun project which got its inspiration from the shouting plant-Mandrake in the Harry Potter
+                  movies. I thought it would be very cool to be able to give voice to plants. Recently I found out a way
+                  detect electrical impulses travelling through the plant just like humans and decided to use it as a
+                  trigger to play a recording. Whenever the Touch-Me-Not plant is touched the plant transmitts the
+                  impulse to the RaspberryPi which generates a preloaded sound via bluetooth speaker.
+                </p>
+                <p style="font-family: sans-serif;">
 
-
- <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
-          </div>
-          <div class="container">
-            <div class="row">
-              <p class="text-muted"><b style="font-family: sans-serif;">Date: August 2018</b></p>
-              <div class="col-lg-12 mx-auto">
-                <div class="modal-body">
-                  <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">Mandrake-The Shouting Plant</h2>
-                 <p class="item-intro text-muted" style="font-size: 25px ;margin-top: -15px;font-weight: normal;">Plant-Computer Interface</p>
-                  <p class="item-intro" style="margin-top: -10px;font-weight: normal;font-size: 20px;font-family: sans-serif; color: black;">{ Plant-Sensor, RaspberryPi}</p>
-                  <img class="img-fluid d-block mx-auto" src="img/about/plant.JPG" alt="">
+                  <!-- copy from here for captions -->
+                </p>
+                <!-- <a href="www.nitrr.ac.in" style="color: blue;font-family: sans-serif;">Dummmy</a> -->
+                <br>
+                <img class="img-fluid d-block mx-auto" src="img/about/shouting_1.JPG" alt="">
+                <p style="font-family: sans-serif;margin-top: -30px; ">
+                  <i style="font-family: sans-serif;position: relative;font-weight: normal;">Fig: Electrodes placed on
+                    the plant</i>
                   <br>
-
-                  <p style="font-family: sans-serif;text-align: justify;">
-                    This was a fun project which got its inspiration from the shouting plant-Mandrake in the Harry Potter movies. I thought it would be very cool to be able to give voice to plants. Recently I found out a way detect electrical impulses travelling through the plant just like humans and decided to use it as a trigger to play a recording. Whenever the Touch-Me-Not plant is touched the plant transmitts the impulse to the RaspberryPi which generates a preloaded sound via bluetooth speaker.
-                  </p>
-                  <p style="font-family: sans-serif;">
-              
-              <!-- copy from here for captions -->
-                  </p>
-                  <!-- <a href="www.nitrr.ac.in" style="color: blue;font-family: sans-serif;">Dummmy</a> -->
                   <br>
-                  <img class="img-fluid d-block mx-auto" src="img/about/shouting_1.JPG" alt="">
-                  <p style="font-family: sans-serif;margin-top: -30px; ">
-             <i style="font-family: sans-serif;position: relative;font-weight: normal;">Fig: Electrodes placed on the plant</i>
-             <br>
-             <br>
-                  </p>
-                  <!-- <img class="img-fluid d-block mx-auto" src="img/about/sparsh2.jpg" alt="">
+                </p>
+                <!-- <img class="img-fluid d-block mx-auto" src="img/about/sparsh2.jpg" alt="">
                   <p style="font-family: sans-serif;margin-top: -30px; ">
              <i> <b style="font-family: sans-serif;position: relative;">In this way</b></i>
                   </p> -->
-                  <!-- copy till here for captions -->
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-info btn-sm" data-dismiss="modal">Other Projects</button>
-                </div>
+                <!-- copy till here for captions -->
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-info btn-sm" data-dismiss="modal">Other Projects</button>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- project 8 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-           <!-- <i class="fas fa-times" style="font-size:2em;color:grey"></i> -->
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
-          </div>
-          <div class="container">
-            <div class="row">
-              <p class="text-muted"><b style="font-family: sans-serif;">Date: August 2018- December 2018</b></p>
-              <div class="col-lg-12 mx-auto">
-                <div class="modal-body">
-                  <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">Small Mouth</h2>
-                  <p class="item-intro text-muted" style="font-size: 25px ;margin-top: -15px;">Autonomous Biomimetic Marine Drone</p>
-                  <p class="item-intro" style="margin-top: -10px;font-size: 20px;font-family: sans-serif; color: black;">
-                    { Biomimetic Robotics, Arduino, Biomechanics}</p>
-                  <img class="img-fluid d-block mx-auto" src="img/about/mouth.jpg" alt="">
+  <!-- project 8 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <!-- <i class="fas fa-times" style="font-size:2em;color:grey"></i> -->
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="container">
+          <div class="row">
+            <p class="text-muted"><b style="font-family: sans-serif;">Date: August 2018- December 2018</b></p>
+            <div class="col-lg-12 mx-auto">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <h2 class="text-uppercase">Small Mouth</h2>
+                <p class="item-intro text-muted" style="font-size: 25px ;margin-top: -15px;">Autonomous Biomimetic
+                  Marine Drone</p>
+                <p class="item-intro" style="margin-top: -10px;font-size: 20px;font-family: sans-serif; color: black;">
+                  { Biomimetic Robotics, Arduino, Biomechanics}</p>
+                <img class="img-fluid d-block mx-auto" src="img/about/mouth.jpg" alt="">
+                <br><br>
+                <p style="font-family: sans-serif;text-align: justify;">
+                  Underwater exploration has been an important preoccupation of researchers for a long time. In terms of
+                  scientific results, most exploration missions of such kind produce immense data of critical
+                  importance. From the discovery of new life forms in areas we earlier thought were inhabitable to
+                  assessing the impact of climate change on coral reefs or environmental monitoring, underwater
+                  exploration has loads of benefits. For these applications and as an exercise in mechanical
+                  prototyping, a 3-D printed model of fish was prepared inspired by the manoeuvring mechanisms of real
+                  fishes. The model was designed in Google Sketchup and printed using a 3-d printer. The body of the
+                  SmallMouth is divided into three parts so that each could be controlled separately and the motion of a
+                  solid object can reproduce the undulation motion of a real fish. It also had obstacle dodging
+                  capability which was achieved by Sensors attached in the front and using a microcontroller.
                   <br><br>
-                  <p style="font-family: sans-serif;text-align: justify;">
-                      Underwater exploration has been an important preoccupation of researchers for a long time. In terms of scientific results, most exploration missions of such kind produce immense data of critical importance. From the discovery of new life forms in areas we earlier thought were inhabitable to assessing the impact of climate change on coral reefs or environmental monitoring, underwater exploration has loads of benefits. For these applications and as an exercise in mechanical prototyping, a 3-D printed model of fish was prepared inspired by the manoeuvring mechanisms of real fishes. The model was designed in Google Sketchup and printed using a 3-d printer. The body of the SmallMouth is divided into three parts so that each could be controlled separately and the motion of a solid object can reproduce the undulation motion of a real fish. It also had obstacle dodging capability which was achieved by Sensors attached in the front and using a microcontroller.
-                      <br><br>
-                      In the long run, with small additions SmallMouth  could replace the existing Autonomous Underwater Vehicles for marine externalploration mission and could also be used by Defence system for surveillance. <br>
-                      <b style="font-family: sans-serif;">The model won second prize in IEEE-Skills and Knowledge Enhancement Program-2016.</b>
-                  </p>
-                    <!--<a href="www.nitrr.ac.in" style="color: blue;font-family: sans-serif;">Dummmy</a>-->
-                  <br><br>
-                  <img class="img-fluid d-block mx-auto" src="img/about/fish.JPG" alt="">
-                  <p style="font-family: sans-serif;margin-top: -30px; ">
-                    <i style="font-family: sans-serif;position: relative;">Fig: Sketchup Model of SmallMouth at different stages</i>
-                  </p>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-info btn-sm" data-dismiss="modal">Other Projects</button>
-                </div>
+                  In the long run, with small additions SmallMouth could replace the existing Autonomous Underwater
+                  Vehicles for marine externalploration mission and could also be used by Defence system for
+                  surveillance. <br>
+                  <b style="font-family: sans-serif;">The model won second prize in IEEE-Skills and Knowledge
+                    Enhancement Program-2016.</b>
+                </p>
+                <!--<a href="www.nitrr.ac.in" style="color: blue;font-family: sans-serif;">Dummmy</a>-->
+                <br><br>
+                <img class="img-fluid d-block mx-auto" src="img/about/fish.JPG" alt="">
+                <p style="font-family: sans-serif;margin-top: -30px; ">
+                  <i style="font-family: sans-serif;position: relative;">Fig: Sketchup Model of SmallMouth at different
+                    stages</i>
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-info btn-sm" data-dismiss="modal">Other Projects</button>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- project 9 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal9" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-           <!-- <i class="fas fa-times" style="font-size:2em;color:grey"></i> -->
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
-          </div>
-          <div class="container">
-            <div class="row">
-              <p class="text-muted"><b style="font-family: sans-serif;">Date: May 2019 - August 2019</b></p>
-              <div class="col-lg-12 mx-auto">
-                <div class="modal-body">
-                  <!-- Project Details Go Here -->
-                  <!-- <h2 class="text-uppercase">Small Mouth</h2> -->
-                  <p class="item-intro text-muted" style="font-size: 25px ;margin-top: -15px;">Portable Intracortical Brain-Computer Interface System</p>
-                  <!-- <p class="item-intro" style="margin-top: -10px;font-size: 20px;font-family: sans-serif; color: black;">
+  <!-- project 9 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal9" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <!-- <i class="fas fa-times" style="font-size:2em;color:grey"></i> -->
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="container">
+          <div class="row">
+            <p class="text-muted"><b style="font-family: sans-serif;">Date: May 2019 - August 2019</b></p>
+            <div class="col-lg-12 mx-auto">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <!-- <h2 class="text-uppercase">Small Mouth</h2> -->
+                <p class="item-intro text-muted" style="font-size: 25px ;margin-top: -15px;">Portable Intracortical
+                  Brain-Computer Interface System</p>
+                <!-- <p class="item-intro" style="margin-top: -10px;font-size: 20px;font-family: sans-serif; color: black;">
                     { Biomimetic Robotics, Arduino, Biomechanics}</p> -->
-                  <img class="img-fluid d-block mx-auto" src="img/about/Portable_BCI.jpg" alt="">
-                  <p style="font-family: sans-serif;margin-top: -30px; ">
-                    <i style="font-family: sans-serif;position: relative;">Fig: Participant using Portable iBCI system</i>
-                  </p>
+                <img class="img-fluid d-block mx-auto" src="img/about/Portable_BCI.jpg" alt="">
+                <p style="font-family: sans-serif;margin-top: -30px; ">
+                  <i style="font-family: sans-serif;position: relative;">Fig: Participant using Portable iBCI system</i>
+                </p>
+                <br><br>
+                <p style="font-family: sans-serif;text-align: justify;">Intracortical brain-computer interface (iBCI)
+                  research has demonstrated the ability for peoplewith paralysis to control computers. However, most of
+                  these demonstrations have been limitedto lab settings and there has been a gap in bringing it to the
+                  end-user. The majority of thesestudies have evaluated the system based on its usability. However,
+                  these cover only a part ofuser experience namely the pragmatic qualities, and not its hedonic
+                  qualities. In order to designa system that is user centered, there needs to be an iterative design
+                  process between thedeveloper and the user, which addresses the whole user experience.
                   <br><br>
-                  <p style="font-family: sans-serif;text-align: justify;">Intracortical brain-computer interface (iBCI) research has demonstrated the ability for peoplewith paralysis to control computers. However, most of these demonstrations have been limitedto lab settings and there has been a gap in bringing it to the end-user. The majority of thesestudies have evaluated the system based on its usability. However, these cover only a part ofuser experience namely the pragmatic qualities, and not its hedonic qualities. In order to designa system that is user centered, there needs to be an iterative design process between thedeveloper and the user, which addresses the whole user experience.
-                      <br><br>
-                      I worked on the graphical user interface and development of the interface between differentsoftware modules for controlling a tablet PC through brain computer interface. The goal was totransition from an experiment system, where the developer setup the task for the participant to asystem available to an end user where the participant to can independently setup (maybe withthe help of the user) and use the system at home. When the user was able to use the system, itwas evaluated addressing the whole user experience. The iBCI user experience was thencompared to that of touch screen input by a participant with tetraplegia who retained the use ofhis proximal arm but had impaired hand function. <br>
-                  </p>
-                    <!--<a href="www.nitrr.ac.in" style="color: blue;font-family: sans-serif;">Dummmy</a>-->
+                  I worked on the graphical user interface and development of the interface between differentsoftware
+                  modules for controlling a tablet PC through brain computer interface. The goal was totransition from
+                  an experiment system, where the developer setup the task for the participant to asystem available to
+                  an end user where the participant to can independently setup (maybe withthe help of the user) and use
+                  the system at home. When the user was able to use the system, itwas evaluated addressing the whole
+                  user experience. The iBCI user experience was thencompared to that of touch screen input by a
+                  participant with tetraplegia who retained the use ofhis proximal arm but had impaired hand function.
                   <br>
-                  <div  class="embed-responsive embed-responsive-16by9" style="overflow:auto;">
-                    <video controls="controls">
-                      <source src="img/about/BCI_control.mp4" type="video/mp4">
-                    </video>
+                </p>
+                <!--<a href="www.nitrr.ac.in" style="color: blue;font-family: sans-serif;">Dummmy</a>-->
+                <br>
+                <div class="embed-responsive embed-responsive-16by9" style="overflow:auto;">
+                  <video controls="controls">
+                    <source src="img/about/BCI_control.mp4" type="video/mp4">
+                  </video>
                 </div>
-                  <br><br>
-                  <img class="img-fluid d-block mx-auto" src="img/about/GUI.png" alt="">
-                  <p style="font-family: sans-serif;margin-top: -30px; ">
-                    <i style="font-family: sans-serif;position: relative;">Fig: Graphical User Interface of the system and painting made by the participant using BCIcontrol</i>
-                  </p>
-                  <br><br>
-                  <p style="font-family: sans-serif;text-align: justify;">The participant was able to use a 3 DOF decoder to complete the center-out task and the shape
-                    tracing task. The user experience assessment revealed high effectiveness (accuracy, low error)
-                    and an overall good match between the user and the assistive device which suggests the user
-                    was rather satisfied with the system when assessed using various questionnaire.</p>
-                    <br><br>
-                  <img class="img-fluid d-block mx-auto" src="img/about/shape tracing.png" alt="">
-                  <p style="font-family: sans-serif;margin-top: -30px; ">
-                    <i style="font-family: sans-serif;position: relative;">Fig: Shape tracing accuracy result comparison of BCI control and Stylus control.</i>
-                  </p>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-info btn-sm" data-dismiss="modal">Other Projects</button>
-                </div>
+                <br><br>
+                <img class="img-fluid d-block mx-auto" src="img/about/GUI.png" alt="">
+                <p style="font-family: sans-serif;margin-top: -30px; ">
+                  <i style="font-family: sans-serif;position: relative;">Fig: Graphical User Interface of the system and
+                    painting made by the participant using BCIcontrol</i>
+                </p>
+                <br><br>
+                <p style="font-family: sans-serif;text-align: justify;">The participant was able to use a 3 DOF decoder
+                  to complete the center-out task and the shape
+                  tracing task. The user experience assessment revealed high effectiveness (accuracy, low error)
+                  and an overall good match between the user and the assistive device which suggests the user
+                  was rather satisfied with the system when assessed using various questionnaire.</p>
+                <br><br>
+                <img class="img-fluid d-block mx-auto" src="img/about/shape tracing.png" alt="">
+                <p style="font-family: sans-serif;margin-top: -30px; ">
+                  <i style="font-family: sans-serif;position: relative;">Fig: Shape tracing accuracy result comparison
+                    of BCI control and Stylus control.</i>
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-info btn-sm" data-dismiss="modal">Other Projects</button>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- project 10 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal10" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-           <!-- <i class="fas fa-times" style="font-size:2em;color:grey"></i> -->
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
-          </div>
-          <div class="container">
-            <div class="row">
-              <p class="text-muted"><b style="font-family: sans-serif;">Date: August 2019 - Present</b></p>
-              <div class="col-lg-12 mx-auto">
-                <div class="modal-body">
-                  <!-- Project Details Go Here -->
-                  <!-- <h2 class="text-uppercase">Small Mouth</h2> -->
-                  <p class="item-intro text-muted" style="font-size: 25px ;margin-top: -15px;">EMG Controlled Ankle foot Prosthesis</p>
-                  <!-- <p class="item-intro" style="margin-top: -10px;font-size: 20px;font-family: sans-serif; color: black;">
+  <!-- project 10 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal10" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <!-- <i class="fas fa-times" style="font-size:2em;color:grey"></i> -->
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="container">
+          <div class="row">
+            <p class="text-muted"><b style="font-family: sans-serif;">Date: August 2019 - Present</b></p>
+            <div class="col-lg-12 mx-auto">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <!-- <h2 class="text-uppercase">Small Mouth</h2> -->
+                <p class="item-intro text-muted" style="font-size: 25px ;margin-top: -15px;">EMG Controlled Ankle foot
+                  Prosthesis</p>
+                <!-- <p class="item-intro" style="margin-top: -10px;font-size: 20px;font-family: sans-serif; color: black;">
                     { Biomimetic Robotics, Arduino, Biomechanics}</p> -->
-                  <p style="font-family: sans-serif;text-align: justify;">Lower-limb amputees account for about 70% of an estimated 185,000 new amputations
-                    in the U.S. each year and 1 million worldwide. Current prosthetic systems lack natural
-                    feedback and joint control, which, if available, are expected to improve prosthetic use,
-                    mobility, balance and decrease limb and phantom pain. In this work we aim to address
-                    this issue and my contribution is mainly in developing EMG decoding algorithm to
-                    control ankle foot prosthesis with muscle activity and IMU.
-                      <br><br>
-                      Early Swing and Stance Phase were identified by the determining heel strike and toe-off
-                      timestamp using the Force sensor placed on the heel and great toe. The Early and the
-                      Late Swing phase transition was identified by the rotation of the shank along the
-                      Talocrural joint axis using the X-axis of the Gyroscope placed on the Achilles tendon.
-                      These Gait Phase identification parameters were used to label the data for performing a
-                      supervised learning classification. The features used from the Kinematic data were the
-                      mean of the maximum 20 sample values and the mean of the minimum 20 sample
-                      values. The classification model used was Random Forest with 25% of the total data
-                      used as the training data and the other 75% as the testing data. The classification
-                      performed based on only Kinematic data yielded a total classification accuracy of 97%.
-                      <br><br>
-                      The EMG features used for classification were, the mean RMS value in each phase, the
-                      maximum RMS value in each phase, the mean of the maximum half sample values of
-                      the RMS EMG, and the mean of the minimum half sample values of the RMS EMG. The
-                      classification using the Random Forest Classifier yielded 97% accuracy when 30% of
-                      the total data was used as training data and the other 70% as testing data. For each of
-                      the Kinematic and EMG data, dimensionality reduction was performed by finding two
-                      principal components
-                      <br>
-                    </p>
-                    <!--<a href="www.nitrr.ac.in" style="color: blue;font-family: sans-serif;">Dummmy</a>-->
+                <p style="font-family: sans-serif;text-align: justify;">Lower-limb amputees account for about 70% of an
+                  estimated 185,000 new amputations
+                  in the U.S. each year and 1 million worldwide. Current prosthetic systems lack natural
+                  feedback and joint control, which, if available, are expected to improve prosthetic use,
+                  mobility, balance and decrease limb and phantom pain. In this work we aim to address
+                  this issue and my contribution is mainly in developing EMG decoding algorithm to
+                  control ankle foot prosthesis with muscle activity and IMU.
                   <br><br>
-                  <img class="img-fluid d-block mx-auto" src="img/about/Picture2.png" alt="">
-                  <p style="font-family: sans-serif;margin-top: -30px; ">
-                    <i style="font-family: sans-serif;position: relative;">Fig: Able Bodied Gait Phase classification (a) Time series Muscle Activations and alocrural joint
-                      axis Gyroscope signal with identified gait phases marked. (b) Confusion Matrix for classification
-                      of gait phases using only Kinematics data. (c) Comparison of Normalized 2 Principal
-                      Components of Kinematics data and EMG data. (d) Confusion Matrix for classification of gait
-                      phases using only EMG data.</i>
-                  </p>
-		  <br><br>
-                  <p style="font-family: sans-serif;text-align: justify;">In the next study, we examined the differences in muscle recruitment between the intact and residual limbs of three transtibial amputees with the aim of characterizing voluntary recruitment patterns. This study’s objective is to characterize patterns of residual muscle recruitment by assessing the spatial and temporal corecruitment of muscles on the residual limbs of transtibial amputees while performing volitional isometric movements (dorsiflexion, plantarflexion, eversion, and inversion). We aim to analyze the pattern of recruitment of residual muscles in comparison with the intact limbs. We report that while there is variability across subjects, there are consistencies in the muscle recruitment patterns for the same functional movement between the intact and the residual limb within each individual subject. These results provide insights for how symmetric activation in residual muscles can be characterized and used for better control of myoelectric prosthetic devices in transtibial amputees.
-                  </p>
-
+                  Early Swing and Stance Phase were identified by the determining heel strike and toe-off
+                  timestamp using the Force sensor placed on the heel and great toe. The Early and the
+                  Late Swing phase transition was identified by the rotation of the shank along the
+                  Talocrural joint axis using the X-axis of the Gyroscope placed on the Achilles tendon.
+                  These Gait Phase identification parameters were used to label the data for performing a
+                  supervised learning classification. The features used from the Kinematic data were the
+                  mean of the maximum 20 sample values and the mean of the minimum 20 sample
+                  values. The classification model used was Random Forest with 25% of the total data
+                  used as the training data and the other 75% as the testing data. The classification
+                  performed based on only Kinematic data yielded a total classification accuracy of 97%.
                   <br><br>
-                  <img class="img-fluid d-block mx-auto" src="img/about/RAW_DATA_Final.jpg" alt="">
-                  <p style="font-family: sans-serif;margin-top: -30px; ">
-                    <i style="font-family: sans-serif;position: relative;">Fig: Experimental setup with Ankle Torque Rig and EMG Placements: A) Subjects were aligned with their knee at 90 degrees to isometrically move their intact ankle. EMG Sensors were placed over their major muscles on both limbs with a goniometer at the intact ankle. B) Example traces of processed EMG data from the primary actors of the intact and residual limb during Dorsiflexion (DF) and Plantarflexion (PF) are shown.</i>
+                  The EMG features used for classification were, the mean RMS value in each phase, the
+                  maximum RMS value in each phase, the mean of the maximum half sample values of
+                  the RMS EMG, and the mean of the minimum half sample values of the RMS EMG. The
+                  classification using the Random Forest Classifier yielded 97% accuracy when 30% of
+                  the total data was used as training data and the other 70% as testing data. For each of
+                  the Kinematic and EMG data, dimensionality reduction was performed by finding two
+                  principal components
+                  <br>
+                </p>
+                <!--<a href="www.nitrr.ac.in" style="color: blue;font-family: sans-serif;">Dummmy</a>-->
+                <br><br>
+                <img class="img-fluid d-block mx-auto" src="img/about/Picture2.png" alt="">
+                <p style="font-family: sans-serif;margin-top: -30px; ">
+                  <i style="font-family: sans-serif;position: relative;">Fig: Able Bodied Gait Phase classification (a)
+                    Time series Muscle Activations and alocrural joint
+                    axis Gyroscope signal with identified gait phases marked. (b) Confusion Matrix for classification
+                    of gait phases using only Kinematics data. (c) Comparison of Normalized 2 Principal
+                    Components of Kinematics data and EMG data. (d) Confusion Matrix for classification of gait
+                    phases using only EMG data.</i>
+                </p>
+                <br><br>
+                <p style="font-family: sans-serif;text-align: justify;">In the next study, we examined the differences
+                  in muscle recruitment between the intact and residual limbs of three transtibial amputees with the aim
+                  of characterizing voluntary recruitment patterns. This study’s objective is to characterize patterns
+                  of residual muscle recruitment by assessing the spatial and temporal corecruitment of muscles on the
+                  residual limbs of transtibial amputees while performing volitional isometric movements (dorsiflexion,
+                  plantarflexion, eversion, and inversion). We aim to analyze the pattern of recruitment of residual
+                  muscles in comparison with the intact limbs. We report that while there is variability across
+                  subjects, there are consistencies in the muscle recruitment patterns for the same functional movement
+                  between the intact and the residual limb within each individual subject. These results provide
+                  insights for how symmetric activation in residual muscles can be characterized and used for better
+                  control of myoelectric prosthetic devices in transtibial amputees.
+                </p>
 
-                    <br><br><br>
-                  <img class="img-fluid d-block mx-auto" src="img/about/Correlation in muscle activity vs time lag_minimal.jpg" alt="">
-                  <p style="font-family: sans-serif;margin-top: -30px; ">
-                    <i style="font-family: sans-serif;position: relative;">Figure 2: Temporal alignment and EMG amplitude correlations between the 2 limbs. Mean-max correlations of the Intact vs Residual limb muscles across all movements for each subject are shown against the time-lag at the time of maximum correlation. Each symbol represents a muscle type and each color represents a subject.</i>
-                  </p>
+                <br><br>
+                <img class="img-fluid d-block mx-auto" src="img/about/RAW_DATA_Final.jpg" alt="">
+                <p style="font-family: sans-serif;margin-top: -30px; ">
+                  <i style="font-family: sans-serif;position: relative;">Fig: Experimental setup with Ankle Torque Rig
+                    and EMG Placements: A) Subjects were aligned with their knee at 90 degrees to isometrically move
+                    their intact ankle. EMG Sensors were placed over their major muscles on both limbs with a goniometer
+                    at the intact ankle. B) Example traces of processed EMG data from the primary actors of the intact
+                    and residual limb during Dorsiflexion (DF) and Plantarflexion (PF) are shown.</i>
 
                   <br><br><br>
-                  <img class="img-fluid d-block mx-auto" src="img/about/Picture22.png" alt="">
-                  <p style="font-family: sans-serif;margin-top: -30px; ">
-                    <i style="font-family: sans-serif;position: relative;">Figure 3:  Comparison of Recruitment by Muscle and Activity.  Distribution of normalized RMS signal during the hold period. A, B, C, and D is for each movement that is Dorsiflexion, Plantarflexion, Inversion and Eversion. Each diamond is the outlier.</i>
-                  </p>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-info btn-sm" data-dismiss="modal">Other Projects</button>
-                </div>
+                  <img class="img-fluid d-block mx-auto"
+                    src="img/about/Correlation in muscle activity vs time lag_minimal.jpg" alt="">
+                <p style="font-family: sans-serif;margin-top: -30px; ">
+                  <i style="font-family: sans-serif;position: relative;">Figure 2: Temporal alignment and EMG amplitude
+                    correlations between the 2 limbs. Mean-max correlations of the Intact vs Residual limb muscles
+                    across all movements for each subject are shown against the time-lag at the time of maximum
+                    correlation. Each symbol represents a muscle type and each color represents a subject.</i>
+                </p>
+
+                <br><br><br>
+                <img class="img-fluid d-block mx-auto" src="img/about/Picture22.png" alt="">
+                <p style="font-family: sans-serif;margin-top: -30px; ">
+                  <i style="font-family: sans-serif;position: relative;">Figure 3: Comparison of Recruitment by Muscle
+                    and Activity. Distribution of normalized RMS signal during the hold period. A, B, C, and D is for
+                    each movement that is Dorsiflexion, Plantarflexion, Inversion and Eversion. Each diamond is the
+                    outlier.</i>
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-info btn-sm" data-dismiss="modal">Other Projects</button>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  </div>
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-    <!-- Contact form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
+  <!-- Contact form JavaScript -->
+  <script src="js/jqBootstrapValidation.js"></script>
+  <script src="js/contact_me.js"></script>
 
-    <!-- Custom scripts for this template -->
-    <script src="js/agency.min.js"></script>
-    <script>
-      var btn = $('#topBtn');
+  <!-- Custom scripts for this template -->
+  <script src="js/agency.min.js"></script>
+  <script>
+    var btn = $('#topBtn');
 
-          $(window).scroll(function() {
-            if ($(window).scrollTop() > 300) {
-              btn.addClass('show');
-            } else {
-              btn.removeClass('show');
-            }
-          });
+    $(window).scroll(function () {
+      if ($(window).scrollTop() > 300) {
+        btn.addClass('show');
+      } else {
+        btn.removeClass('show');
+      }
+    });
 
-          btn.on('click', function(e) {
-            e.preventDefault();
-            $('html, body').animate({scrollTop:0}, '300');
-          });
-    </script>
-  </body>
+    btn.on('click', function (e) {
+      e.preventDefault();
+      $('html, body').animate({ scrollTop: 0 }, '300');
+    });
+  </script>
+</body>
+
 </html>
